@@ -1,0 +1,275 @@
+{
+  "slug": "mandar-tarefas",
+  "num": 5,
+  "titulo": "Diez tareas: manda el lote y vete a dormir",
+  "titulo_curto": "Mandar el lote",
+  "menu": "Mandar",
+  "minutos": 18,
+  "lead": "Con el bot en línea, tu cola en papel se convierte en mensajes. Cada línea es una skill con una entrada; el bot pone cada pedido en la cola correcta, lo ejecuta dentro del límite de cada una y avisa en el chat cuando termina.",
+  "objetivo": "mandar de 5 a 10 tareas en formato de skill y seguir el lote con /fila y /jobs.",
+  "hero_alt": "Mano sosteniendo un celular con mensajes enviados en secuencia, monitor desenfocado al fondo.",
+  "competencias": [
+    "enviar-lote",
+    "acompanhar-fila",
+    "evitar-perda-por-restart"
+  ],
+  "aprende": [
+    {
+      "icone": "chat",
+      "t": "El formato de un pedido: skill, entrada y campos"
+    },
+    {
+      "icone": "fila",
+      "t": "Las cinco colas y por qué la de render ejecuta una a la vez"
+    },
+    {
+      "icone": "lupa",
+      "t": "Seguir con /fila, /jobs y /status"
+    },
+    {
+      "icone": "relogio",
+      "t": "Qué no hacer mientras el lote está corriendo"
+    }
+  ],
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "De un mensaje a un aviso",
+      "sub": "El camino de cada pedido del lote.",
+      "nos": [
+        {
+          "icone": "chat",
+          "titulo": "Mensaje",
+          "sub": "skill: entrada | campo",
+          "itens": [
+            {
+              "icone": "arquivo",
+              "t": "transcrever: https://…"
+            }
+          ],
+          "detalhe": "Una línea por tarea. El nombre antes de los dos puntos es la skill; después va la entrada; los campos opcionales van después de una barra vertical."
+        },
+        {
+          "icone": "lista",
+          "titulo": "Catálogo",
+          "sub": "config/skills.json",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "cola, plazo, intentos"
+            }
+          ],
+          "detalhe": "El bot busca la skill en el catálogo. Ahí está escrito en qué cola se ejecuta, el plazo máximo y cuántos intentos tiene. Una skill que no está en el catálogo se rechaza al instante."
+        },
+        {
+          "icone": "fila",
+          "titulo": "Cola del tipo",
+          "sub": "texto · render · io · cpu",
+          "itens": [
+            {
+              "icone": "relogio",
+              "t": "render: 1 a la vez"
+            },
+            {
+              "icone": "relogio",
+              "t": "texto: 2 a la vez"
+            }
+          ],
+          "detalhe": "Cada cola tiene su propio límite. Diez pedidos de video entran todos, pero la cola de render ejecuta uno a la vez, porque comparte la tarjeta de video.",
+          "forte": true
+        },
+        {
+          "icone": "robo",
+          "titulo": "Agente",
+          "sub": "Con el prompt de la skill",
+          "itens": [
+            {
+              "icone": "terminal",
+              "t": "termina con RESULT: o ERRO:"
+            }
+          ],
+          "detalhe": "El trabajador arma el prompt de la skill con tu entrada y llama al agente. Este trabaja solo, sin pedir confirmación, y termina con RESULT o ERRO."
+        },
+        {
+          "icone": "megafone",
+          "titulo": "Aviso",
+          "sub": "En tu chat",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "resultado o motivo"
+            }
+          ],
+          "detalhe": "Al terminar, el bot avisa en el chat con el resultado o con el motivo del fallo. Por la mañana, la conversación es tu informe."
+        }
+      ],
+      "legenda": "Haz clic en cada bloque. Los números de cola y de límite vienen de la documentación del inemaccbot.",
+      "rolagem": true,
+      "rolagem_fim": {
+        "titulo": "Diez mensajes, una noche",
+        "texto": "Mandas la lista completa de una vez. El bot la reparte entre las colas, respeta los límites y responde cada una cuando termina."
+      }
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Cómo escribir y seguir el lote",
+      "passos": [
+        {
+          "titulo": "El formato del pedido",
+          "sub": "skill: entrada",
+          "texto": [
+            "<code>&lt;skill&gt;: &lt;entrada&gt; [| campo]</code>. La entrada es lo que pusiste en la columna \"Entrada\" de tu cola en papel.",
+            "<code>/skills</code> lista las skills instaladas y <code>/ajuda &lt;skill&gt;</code> muestra los campos de cada una. Un campo escrito sin la barra se rechaza; no pasa a formar parte de la entrada en silencio."
+          ],
+          "exemplo": {
+            "rot": "Ejemplo",
+            "texto": "explicativo: o que é uma fila durável | vertical"
+          }
+        },
+        {
+          "titulo": "Campos que valem para todas",
+          "sub": "modelo, esforço, motor",
+          "texto": [
+            "<code>| modelo=haiku</code> y <code>| esforco=high</code> cambian el modelo y el razonamiento solo de ese pedido. <code>| motor=codex</code> ejecuta ese pedido con codex en lugar de claude.",
+            "Úsalo para probar en un solo pedido. El modelo efectivo queda guardado en el job, así que por la mañana sabes con qué se hizo cada resultado."
+          ]
+        },
+        {
+          "titulo": "Seguimiento",
+          "sub": "/fila · /jobs · /status",
+          "texto": [
+            "<code>/fila</code> muestra, por cola, lo que está corriendo, cuántos esperan, la antigüedad, los errores de las últimas 24 h y los reintentados. <code>/jobs</code> lista los jobs en ejecución y los que terminaron.",
+            "<code>/status j13</code> da el detalle de un job. Un número solo es siempre un job; con letra y # (<code>A#9</code>) es un flujo, tema de la próxima clase."
+          ]
+        },
+        {
+          "titulo": "Cambiar de idea",
+          "sub": "/furar · /cancelar",
+          "texto": [
+            "<code>/furar j13</code> pone un job pendiente al frente de la cola. <code>/cancelar j13</code> interrumpe un job pendiente o en ejecución.",
+            "Cancelar afecta a la cola, no al mundo: lo que ya se creó afuera (archivo entregado, video publicado) sigue ahí."
+          ]
+        },
+        {
+          "titulo": "No reiniciar con el lote en marcha",
+          "sub": "código 143",
+          "texto": [
+            "Si un job falla con <code>código 143</code>, no fue el agente: fue el servicio que se reinició a la mitad (143 = 128 + 15, la señal de apagado). El job vuelve a la cola si todavía tiene intentos; si no, falla.",
+            "Un render tarda de 10 a 15 min. Dos reinicios seguidos pueden gastar los dos intentos del mismo job. Antes de reiniciar o actualizar, revisa que la cola esté vacía."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "El lote de una noche",
+      "sub": "Cambia los ejemplos por las líneas de tu cola en papel. Un mensaje por tarea.",
+      "blocos": [
+        {
+          "rot": "Telegram · mensajes para el bot",
+          "icone": "chat",
+          "conteudo": "transcrever: https://link-da-gravacao-de-segunda\ntranscrever: https://link-da-aula-gravada\nexplicativo: o que é uma fila durável | vertical\ndublar: https://link-do-video-em-ingles\ntranscrever: https://link-do-podcast | modelo=haiku"
+        },
+        {
+          "rot": "Telegram · seguimiento e intervención",
+          "icone": "lupa",
+          "conteudo": "/fila\n/jobs\n/status j13\n/furar j15\n/cancelar j14"
+        },
+        {
+          "rot": "Terminal · antes de reiniciar el bot",
+          "icone": "terminal",
+          "conteudo": "sqlite3 inemaccbot.db \\\n  \"select id,fila,tarefa,status,flow_ref from jobs where status in ('queued','running');\"\n# vazio → pode reiniciar. Com render rodando → espere."
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Respuesta de /fila (ilustración)",
+            "html": "<pre>texto   · rodando 2 · esperando 1 · erro 24h 0\nrender  · rodando 1 · esperando 2 · erro 24h 0\nio      · rodando 0 · esperando 0 · erro 24h 0</pre><p>Ilustración del tipo de información; el texto exacto del bot puede variar.</p>"
+          },
+          {
+            "rot": "Skills del catálogo",
+            "html": "<ul><li><code>transcrever</code> · cola texto · audio → texto (Whisper local)</li><li><code>dublar</code> · cola texto · traduce y dobla</li><li><code>explicativo</code> · cola render · video explicativo</li><li><code>curso</code>, <code>demo</code>, <code>reel</code> · cola render</li><li><code>imagem</code> · cola io · imagen suelta</li></ul><p>Algunas dependen de otros proyectos instalados en la máquina. <code>/skills</code> muestra lo que tiene tu bot.</p>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica",
+      "sub": "Usa tu cola en papel. Empieza por tareas sin compuerta.",
+      "exercicios": [
+        {
+          "id": "e4",
+          "titulo": "E4 · Diez tareas y vete a dormir",
+          "min": "1 noche",
+          "dias": 1,
+          "texto": "Manda al bot de 5 a 10 tareas de tu lista (transcrever, resumir, explicativo…). Revisa el /fila una vez y ve a hacer otra cosa. No reinicies el bot hasta que la cola se vacíe.",
+          "pronto": "el /fila mostró el lote repartido y, al día siguiente, cada tarea tiene una respuesta en el chat (resultado o motivo del fallo)."
+        }
+      ],
+      "fonte": "La revisión de la mañana es la clase 7. Ejercicio original: <a href=\"https://github.com/inematds/jornada-agentes/blob/main/exercicios/03-filas.md\" target=\"_blank\" rel=\"noopener\">03-filas.md</a> (E4)."
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Prueba lo que aprendiste",
+      "sub": "La explicación aparece después de tu respuesta.",
+      "perguntas": [
+        {
+          "p": "Enviaste cuatro pedidos de video explicativo. ¿Por qué solo uno aparece corriendo?",
+          "opcoes": [
+            "La cola de render corre uno por vez a propósito, porque comparten la tarjeta de video.",
+            "Los otros tres fallaron.",
+            "El bot solo acepta un mensaje a la vez.",
+            "Falta pagar la suscripción."
+          ],
+          "certa": 0,
+          "explica": "Los cuatro están guardados; la cola de render tiene límite 1. Los otros esperan su turno, y el /fila muestra cuántos están esperando.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "Un job falló con <code>código 143</code>. ¿Qué indica eso?",
+          "opcoes": [
+            "El servicio se reinició con el job en ejecución.",
+            "El prompt de la skill está mal.",
+            "El modelo rechazó la tarea.",
+            "Se acabó el espacio en disco."
+          ],
+          "certa": 0,
+          "explica": "143 es la señal de apagado. Revisa la cola antes de reiniciar. El trabajo no se corrompió; solo no terminó, y se puede rehacer.",
+          "cert": true,
+          "ref": "passos"
+        },
+        {
+          "p": "Quieres probar un modelo más barato solo en una solicitud. ¿Cómo lo haces?",
+          "opcoes": [
+            "Agregar <code>| modelo=haiku</code> a esa solicitud.",
+            "Cambiar el modelo predeterminado en el .env y reiniciar.",
+            "Enviar la solicitud dos veces.",
+            "Crear una skill nueva."
+          ],
+          "certa": 0,
+          "explica": "El campo vale solo para ese job y queda guardado en él. Cambiar el .env cambiaría todo y exigiría reiniciar, con riesgo para el lote en curso.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir más allá",
+      "links": [
+        {
+          "t": "Uso en el chat: comandos y skills (README del inemaccbot)",
+          "href": "https://github.com/inematds/inemaccbot#uso-no-chat",
+          "icone": "chat"
+        },
+        {
+          "t": "Guía del inemaccbot",
+          "href": "https://inematds.github.io/inemaccbot/guia/",
+          "icone": "fila"
+        }
+      ]
+    }
+  ]
+}

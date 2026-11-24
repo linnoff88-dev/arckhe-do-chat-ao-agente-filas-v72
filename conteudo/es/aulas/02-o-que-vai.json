@@ -123,14 +123,14 @@
     {
       "tipo": "passos",
       "titulo": "Las tres preguntas, una por una",
-      "sub": "Con ejemplos de lo que corre hoy en inemaccbot.",
+      "sub": "Con ejemplos de lo que corre hoy en ARCKHÉccbot.",
       "passos": [
         {
           "titulo": "¿La entrada es clara?",
           "sub": "pregunta 1",
           "texto": [
             "La cola no conversa contigo en el medio. La tarea tiene que caber en una línea: un enlace, una ruta de archivo o un tema.",
-            "Las skills de inemaccbot muestran el formato: <code>transcrever: https://…</code>, <code>explicativo: &lt;tema&gt; | vertical</code>, <code>imagem: una zorra roja en la nieve | ratio=16:9</code>."
+            "Las skills de ARCKHÉccbot muestran el formato: <code>transcrever: https://…</code>, <code>explicativo: &lt;tema&gt; | vertical</code>, <code>imagem: una zorra roja en la nieve | ratio=16:9</code>."
           ],
           "exemplo": {
             "rot": "Demasiado vaga",
@@ -153,7 +153,7 @@
             "Transcribir una reunión para leerla tú mismo no tiene consecuencias afuera. Corre sola."
           ],
           "exemplo": {
-            "rot": "En inemaccbot",
+            "rot": "En ARCKHÉccbot",
             "texto": "El /promoavatar escribe los textos de cada público y se detiene. Solo después de tu aprobación sigue hacia el video y el reel."
           }
         },
@@ -210,7 +210,7 @@
           "pronto": "las 10 líneas están llenas y al menos dos tienen compuerta."
         }
       ],
-      "fonte": "Ejercicio original: <a href=\"https://github.com/inematds/jornada-agentes/blob/main/exercicios/03-filas.md\" target=\"_blank\" rel=\"noopener\">jornada-agentes/exercicios/03-filas.md</a> (E1)."
+      "fonte": "Ejercicio original: <a href=\"https://github.com/linnoff88-dev/jornada-agentes/blob/main/exercicios/03-filas.md\" target=\"_blank\" rel=\"noopener\">jornada-agentes/exercicios/03-filas.md</a> (E1)."
     },
     {
       "tipo": "quiz",
@@ -262,12 +262,12 @@
       "links": [
         {
           "t": "Ejercicios de la secuencia 3 (jornada-agentes)",
-          "href": "https://github.com/inematds/jornada-agentes/blob/main/exercicios/03-filas.md",
+          "href": "https://github.com/linnoff88-dev/jornada-agentes/blob/main/exercicios/03-filas.md",
           "icone": "lista"
         },
         {
-          "t": "Curso INEMACCBOT con Promoavatar: ¿skill o flujo?",
-          "href": "https://eventos.inema.pro/inemaccbot.html",
+          "t": "Curso ARCKHÉCCBOT con Promoavatar: ¿skill o flujo?",
+          "href": "https://eventos.ARCKHÉ.pro/ARCKHÉccbot.html",
           "icone": "camadas"
         }
       ]

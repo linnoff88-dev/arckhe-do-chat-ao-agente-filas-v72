@@ -134,7 +134,7 @@
         {
           "rot": "Terminal · prepare and run",
           "icone": "terminal",
-          "conteudo": "git clone https://github.com/inematds/jornada-agentes.git\ncd jornada-agentes\nmkdir -p fila/entrada\necho \"Resuma em 5 linhas o que é uma fila de tarefas.\" > fila/entrada/01.md\necho \"Liste 3 riscos de deixar um agente rodando sozinho.\" > fila/entrada/02.md\n./ferramentas/fila-caseira.sh fila          # default engine: claude\n./ferramentas/fila-caseira.sh fila codex    # or codex"
+          "conteudo": "git clone https://github.com/linnoff88-dev/jornada-agentes.git\ncd jornada-agentes\nmkdir -p fila/entrada\necho \"Resuma em 5 linhas o que é uma fila de tarefas.\" > fila/entrada/01.md\necho \"Liste 3 riscos de deixar um agente rodando sozinho.\" > fila/entrada/02.md\n./ferramentas/fila-caseira.sh fila          # default engine: claude\n./ferramentas/fila-caseira.sh fila codex    # or codex"
         },
         {
           "rot": "The core of fila-caseira.sh (condensed for reading)",
@@ -173,7 +173,7 @@
           "pronto": "the tasks are in fila/feito with the answer, and you saw the queue pick up where it left off after Ctrl+C."
         }
       ],
-      "fonte": "Script: <a href=\"https://github.com/inematds/jornada-agentes/blob/main/ferramentas/fila-caseira.sh\" target=\"_blank\" rel=\"noopener\">jornada-agentes/ferramentas/fila-caseira.sh</a>."
+      "fonte": "Script: <a href=\"https://github.com/linnoff88-dev/jornada-agentes/blob/main/ferramentas/fila-caseira.sh\" target=\"_blank\" rel=\"noopener\">jornada-agentes/ferramentas/fila-caseira.sh</a>."
     },
     {
       "tipo": "quiz",
@@ -202,7 +202,7 @@
             "Because the agent only reads files from that folder."
           ],
           "certa": 1,
-          "explica": "Moving first is the record of \"I'm working on this.\" It is the homemade version of inemaccbot's lease.",
+          "explica": "Moving first is the record of \"I'm working on this.\" It is the homemade version of ARCKHÉccbot's lease.",
           "ref": "diagrama"
         },
         {
@@ -225,12 +225,12 @@
       "links": [
         {
           "t": "jornada-agentes repository (homemade queue)",
-          "href": "https://github.com/inematds/jornada-agentes",
+          "href": "https://github.com/linnoff88-dev/jornada-agentes",
           "icone": "git"
         },
         {
           "t": "Training guide with the 23 exercises",
-          "href": "https://inematds.github.io/jornada-agentes/guia/",
+          "href": "https://linnoff88-dev.github.io/
           "icone": "lista"
         }
       ]

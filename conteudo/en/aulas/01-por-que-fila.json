@@ -28,7 +28,7 @@
     },
     {
       "icone": "robo",
-      "t": "Where inemaccbot comes in at step 3"
+      "t": "Where ARCKHÉccbot comes in at step 3"
     }
   ],
   "secoes": [
@@ -67,7 +67,7 @@
               "t": "Survives crashes"
             }
           ],
-          "detalhe": "The request is saved before it runs. In inemaccbot, the queue is a SQLite database on disk; in the homemade queue, it's one file per task in a folder. Shut down? The task is still there.",
+          "detalhe": "The request is saved before it runs. In ARCKHÉccbot, the queue is a SQLite database on disk; in the homemade queue, it's one file per task in a folder. Shut down? The task is still there.",
           "forte": true
         },
         {
@@ -100,7 +100,7 @@
         }
       ],
       "volta": "Running again only picks up what's left",
-      "legenda": "In inemaccbot the request arrives through Telegram; in the homemade queue from lesson 3, it's a .md file in a folder. The idea is the same.",
+      "legenda": "In ARCKHÉccbot the request arrives through Telegram; in the homemade queue from lesson 3, it's a .md file in a folder. The idea is the same.",
       "rolagem": true,
       "rolagem_fim": {
         "titulo": "Why this lets you walk away",
@@ -117,7 +117,7 @@
           "sub": "durable",
           "texto": [
             "The request becomes a record on disk the moment it arrives. It doesn't depend on an open window or on the program's memory.",
-            "In inemaccbot, each request becomes a <b>job</b> in a database table. It has a number (<code>j13</code>), a queue, a status, and how many attempts are left."
+            "In ARCKHÉccbot, each request becomes a <b>job</b> in a database table. It has a number (<code>j13</code>), a queue, a status, and how many attempts are left."
           ],
           "exemplo": {
             "rot": "Everyday sign",
@@ -129,7 +129,7 @@
           "sub": "order",
           "texto": [
             "Each worker takes one task, finishes it, and only then takes the next. This prevents two jobs from fighting over the same machine.",
-            "In inemaccbot there are five queues with different limits: the rendering queue runs <b>one at a time on purpose</b>, because it uses the graphics card; the network queue accepts ten."
+            "In ARCKHÉccbot there are five queues with different limits: the rendering queue runs <b>one at a time on purpose</b>, because it uses the graphics card; the network queue accepts ten."
           ]
         },
         {
@@ -137,7 +137,7 @@
           "sub": "recovery",
           "texto": [
             "If the process crashes midway, the task isn't lost or left half-done forever. The next time it starts up, whatever was in progress goes back to the queue.",
-            "inemaccbot does this before accepting new work and writes to the log: <code>boot: recuperação de leases — requeued=N failed=M</code>. <i>Requeued</i> is what went back to the queue; <i>failed</i> is what had already used up all its attempts."
+            "ARCKHÉccbot does this before accepting new work and writes to the log: <code>boot: recuperação de leases — requeued=N failed=M</code>. <i>Requeued</i> is what went back to the queue; <i>failed</i> is what had already used up all its attempts."
           ]
         },
         {
@@ -145,7 +145,7 @@
           "sub": "tracking",
           "texto": [
             "A task that hit an error doesn't vanish and doesn't block the queue: it goes to the failures side, with the reason written down, and the queue moves on.",
-            "The inemaccbot prompts require the agent to finish with <code>RESULT: &lt;path&gt;</code> or <code>ERRO: &lt;short reason&gt;</code>. That contract is what lets you know, without opening anything, how each task ended."
+            "The ARCKHÉccbot prompts require the agent to finish with <code>RESULT: &lt;path&gt;</code> or <code>ERRO: &lt;short reason&gt;</code>. That contract is what lets you know, without opening anything, how each task ended."
           ]
         }
       ]
@@ -161,7 +161,7 @@
           "conteudo": "fila/\n  entrada/   # requests waiting their turn\n  rodando/   # the task the agent is working on right now\n  feito/     # request + answer\n  falhou/    # request + ERRO and the reason"
         },
         {
-          "rot": "inemaccbot (job status in the database)",
+          "rot": "ARCKHÉccbot (job status in the database)",
           "icone": "memoria",
           "conteudo": "queued    # in the queue, waiting its turn\nrunning   # a worker picked it up and is executing it\ndone      # finished with a result\nfailed    # ran out of attempts, with the reason\ncanceled  # you canceled it (/cancelar)"
         }
@@ -171,11 +171,11 @@
         "abas": [
           {
             "rot": "How each one resumes",
-            "html": "<ul><li><b>Homemade queue:</b> when you run it again, whatever is in <code>rodando/</code> goes back to <code>entrada/</code>.</li><li><b>inemaccbot:</b> the worker renews a \"lease\" on the task while it works. If the lease expires because the process crashed, the task goes back to <code>queued</code> as long as there are attempts left.</li></ul>"
+            "html": "<ul><li><b>Homemade queue:</b> when you run it again, whatever is in <code>rodando/</code> goes back to <code>entrada/</code>.</li><li><b>ARCKHÉccbot:</b> the worker renews a \"lease\" on the task while it works. If the lease expires because the process crashed, the task goes back to <code>queued</code> as long as there are attempts left.</li></ul>"
           },
           {
             "rot": "Who decides what counts as a failure",
-            "html": "<p>In the home-made queue: an empty response or an error code from the agent. In inemaccbot: the agent did not finish with <code>RESULT:</code>, the deadline (<code>timeout</code>) ran out, or the attempts (<code>max_tentativas</code>, 2 to 4 in the catalog skills) were used up.</p>"
+            "html": "<p>In the home-made queue: an empty response or an error code from the agent. In ARCKHÉccbot: the agent did not finish with <code>RESULT:</code>, the deadline (<code>timeout</code>) ran out, or the attempts (<code>max_tentativas</code>, 2 to 4 in the catalog skills) were used up.</p>"
           }
         ]
       }
@@ -183,7 +183,7 @@
     {
       "tipo": "video",
       "titulo": "Step 3 on video",
-      "sub": "The durable queue of inemaccbot and the approval gate, in a minute and a half.",
+      "sub": "The durable queue of ARCKHÉccbot and the approval gate, in a minute and a half.",
       "chave": "seq3-filas"
     },
     {
@@ -235,18 +235,18 @@
       "titulo": "Going further",
       "links": [
         {
-          "t": "inemaccbot guide: what it is and how it works",
-          "href": "https://inematds.github.io/inemaccbot/guia/",
+          "t": "ARCKHÉccbot guide: what it is and how it works",
+          "href": "https://linnoff88-dev.github.io/
           "icone": "fila"
         },
         {
-          "t": "inemaccbot architecture map",
-          "href": "https://inematds.github.io/inemaccbot/guia/arquitetura.html",
+          "t": "ARCKHÉccbot architecture map",
+          "href": "https://linnoff88-dev.github.io/
           "icone": "camadas"
         },
         {
           "t": "Overview of the From chat to agent course",
-          "href": "https://inematds.github.io/do-chat-ao-agente-v72/en/",
+          "href": "https://linnoff88-dev.github.io/
           "icone": "voltar"
         }
       ]

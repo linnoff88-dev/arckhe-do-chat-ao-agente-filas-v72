@@ -103,7 +103,7 @@
           "detalhe": "When it finishes, the bot tells you in the chat with the result or the reason for the failure. In the morning, the conversation is your report."
         }
       ],
-      "legenda": "Click each block. The queue and limit numbers come from the inemaccbot documentation.",
+      "legenda": "Click each block. The queue and limit numbers come from the ARCKHÉccbot documentation.",
       "rolagem": true,
       "rolagem_fim": {
         "titulo": "Ten messages, one night",
@@ -178,7 +178,7 @@
         {
           "rot": "Terminal · before restarting the bot",
           "icone": "terminal",
-          "conteudo": "sqlite3 inemaccbot.db \\\n  \"select id,fila,tarefa,status,flow_ref from jobs where status in ('queued','running');\"\n# empty → safe to restart. Render running → wait."
+          "conteudo": "sqlite3 ARCKHÉccbot.db \\\n  \"select id,fila,tarefa,status,flow_ref from jobs where status in ('queued','running');\"\n# empty → safe to restart. Render running → wait."
         }
       ],
       "saida": {
@@ -209,7 +209,7 @@
           "pronto": "/fila showed the batch distributed and, the next day, each task has a reply in the chat (a result or the reason it failed)."
         }
       ],
-      "fonte": "The morning check is lesson 7. Original exercise: <a href=\"https://github.com/inematds/jornada-agentes/blob/main/exercicios/03-filas.md\" target=\"_blank\" rel=\"noopener\">03-filas.md</a> (E4)."
+      "fonte": "The morning check is lesson 7. Original exercise: <a href=\"https://github.com/linnoff88-dev/jornada-agentes/blob/main/exercicios/03-filas.md\" target=\"_blank\" rel=\"noopener\">03-filas.md</a> (E4)."
     },
     {
       "tipo": "quiz",
@@ -260,13 +260,13 @@
       "titulo": "Going further",
       "links": [
         {
-          "t": "Using it in chat: commands and skills (inemaccbot README)",
-          "href": "https://github.com/inematds/inemaccbot#uso-no-chat",
+          "t": "Using it in chat: commands and skills (ARCKHÉccbot README)",
+          "href": "https://github.com/linnoff88-dev/ARCKHÉccbot#uso-no-chat",
           "icone": "chat"
         },
         {
-          "t": "inemaccbot guide",
-          "href": "https://inematds.github.io/inemaccbot/guia/",
+          "t": "ARCKHÉccbot guide",
+          "href": "https://linnoff88-dev.github.io/
           "icone": "fila"
         }
       ]

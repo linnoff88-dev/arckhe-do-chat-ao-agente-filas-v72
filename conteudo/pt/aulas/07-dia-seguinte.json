@@ -197,7 +197,7 @@
           "pronto": "a regra está escrita, a tarefa rodou de novo e você anotou se o resultado melhorou."
         }
       ],
-      "fonte": "Desafio extra da sequência 3: <a href=\"https://github.com/inematds/jornada-agentes/blob/main/exercicios/03-filas.md\" target=\"_blank\" rel=\"noopener\">03-filas.md</a>."
+      "fonte": "Desafio extra da sequência 3: <a href=\"https://github.com/linnoff88-dev/jornada-agentes/blob/main/exercicios/03-filas.md\" target=\"_blank\" rel=\"noopener\">03-filas.md</a>."
     },
     {
       "tipo": "gerador",
@@ -319,17 +319,17 @@
       "links": [
         {
           "t": "Voltar à visão geral: Do chat ao agente",
-          "href": "https://inematds.github.io/do-chat-ao-agente-v72/",
+          "href": "https://linnoff88-dev.github.io/
           "icone": "voltar"
         },
         {
           "t": "Área da formação no eventos",
-          "href": "https://eventos.inema.pro/do-chat-ao-agente/",
+          "href": "https://eventos.ARCKHÉ.pro/do-chat-ao-agente/",
           "icone": "camadas"
         },
         {
-          "t": "Guia do inemaccbot",
-          "href": "https://inematds.github.io/inemaccbot/guia/",
+          "t": "Guia do ARCKHÉccbot",
+          "href": "https://linnoff88-dev.github.io/
           "icone": "fila"
         }
       ]

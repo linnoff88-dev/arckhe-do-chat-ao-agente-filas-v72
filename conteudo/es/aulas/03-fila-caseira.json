@@ -134,7 +134,7 @@
         {
           "rot": "Terminal · preparar y ejecutar",
           "icone": "terminal",
-          "conteudo": "git clone https://github.com/inematds/jornada-agentes.git\ncd jornada-agentes\nmkdir -p fila/entrada\necho \"Resume en 5 líneas qué es una cola de tareas.\" > fila/entrada/01.md\necho \"Enumera 3 riesgos de dejar un agente corriendo solo.\" > fila/entrada/02.md\n./ferramentas/fila-caseira.sh fila          # motor predeterminado: claude\n./ferramentas/fila-caseira.sh fila codex    # o codex"
+          "conteudo": "git clone https://github.com/linnoff88-dev/jornada-agentes.git\ncd jornada-agentes\nmkdir -p fila/entrada\necho \"Resume en 5 líneas qué es una cola de tareas.\" > fila/entrada/01.md\necho \"Enumera 3 riesgos de dejar un agente corriendo solo.\" > fila/entrada/02.md\n./ferramentas/fila-caseira.sh fila          # motor predeterminado: claude\n./ferramentas/fila-caseira.sh fila codex    # o codex"
         },
         {
           "rot": "El corazón de fila-caseira.sh (resumido para leer)",
@@ -173,7 +173,7 @@
           "pronto": "las tareas están en fila/feito con la respuesta y viste que la cola continuó desde donde quedó después del Ctrl+C."
         }
       ],
-      "fonte": "Script: <a href=\"https://github.com/inematds/jornada-agentes/blob/main/ferramentas/fila-caseira.sh\" target=\"_blank\" rel=\"noopener\">jornada-agentes/ferramentas/fila-caseira.sh</a>."
+      "fonte": "Script: <a href=\"https://github.com/linnoff88-dev/jornada-agentes/blob/main/ferramentas/fila-caseira.sh\" target=\"_blank\" rel=\"noopener\">jornada-agentes/ferramentas/fila-caseira.sh</a>."
     },
     {
       "tipo": "quiz",
@@ -202,7 +202,7 @@
             "Porque el agente solo lee archivos de esa carpeta."
           ],
           "certa": 1,
-          "explica": "Mover antes es el registro de \"estoy trabajando en esto\". Es la versión casera del lease de inemaccbot.",
+          "explica": "Mover antes es el registro de \"estoy trabajando en esto\". Es la versión casera del lease de ARCKHÉccbot.",
           "ref": "diagrama"
         },
         {
@@ -225,12 +225,12 @@
       "links": [
         {
           "t": "Repositorio jornada-agentes (cola casera)",
-          "href": "https://github.com/inematds/jornada-agentes",
+          "href": "https://github.com/linnoff88-dev/jornada-agentes",
           "icone": "git"
         },
         {
           "t": "Guía de la formación con los 23 ejercicios",
-          "href": "https://inematds.github.io/jornada-agentes/guia/",
+          "href": "https://linnoff88-dev.github.io/
           "icone": "lista"
         }
       ]

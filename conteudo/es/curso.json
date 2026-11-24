@@ -1,57 +1,57 @@
 {
   "id": "do-chat-ao-agente-filas-v72",
   "lang": "es",
-  "url": "https://inematds.github.io/do-chat-ao-agente-filas-v72/es/",
+  "url": "https://linnoff88-dev.github.io/
   "nome": "Colas: diez tareas y vete a dormir",
   "sub": "Del chat al agente · nivel 3",
   "volta": {
     "t": "Visión general: Del chat al agente",
-    "href": "https://inematds.github.io/do-chat-ao-agente-v72/es/"
+    "href": "https://linnoff88-dev.github.io/
   },
   "lado_card": {
     "rot": "Práctica de este nivel",
     "t": "Siete ejercicios con \"listo cuando\"",
     "texto": "De la cola en papel a la revisión de la mañana. Pasa al siguiente solo cuando el \"listo cuando\" sea verdad.",
     "link": "Ejercicios de la secuencia 3",
-    "href": "https://github.com/inematds/jornada-agentes/blob/main/exercicios/03-filas.md",
-    "href_en": "https://github.com/inematds/jornada-agentes/blob/main/exercicios/en/03-filas.md",
-    "href_es": "https://github.com/inematds/jornada-agentes/blob/main/exercicios/es/03-filas.md"
+    "href": "https://github.com/linnoff88-dev/jornada-agentes/blob/main/exercicios/03-filas.md",
+    "href_en": "https://github.com/linnoff88-dev/jornada-agentes/blob/main/exercicios/en/03-filas.md",
+    "href_es": "https://github.com/linnoff88-dev/jornada-agentes/blob/main/exercicios/es/03-filas.md"
   },
-  "rodape": "INEMA.CLUB · contenido abierto y gratuito · formato INEMA Learning v7.2 · nivel 3 de la formación <a href=\"https://inematds.github.io/do-chat-ao-agente-v72/es/\">Del chat al agente</a> · <a href=\"https://inematds.github.io/inemaccbot/guia/\">guía de inemaccbot</a> · <a href=\"https://eventos.inema.pro/do-chat-ao-agente/\">eventos.inema.pro/do-chat-ao-agente</a> · <a href=\"https://inema.club/\">inema.club</a> · <a href=\"https://www.inema.club/cursos/326-do-chat-ao-agente-degrau-3-filas-dez-tarefas-e-va-dormir-inemaccbot/\">Ficha completa de este curso en INEMA.CLUB</a> · <a href=\"https://www.inema.club/aprender-inteligencia-artificial/\">Guía: cómo aprender inteligencia artificial</a>",
+  "rodape": "ARCKHÉ AI · contenido abierto y gratuito · formato ARCKHÉ Learning v7.2 · nivel 3 de la formación <a href=\"https://linnoff88-dev.github.io/ chat al agente</a> · <a href=\"https://linnoff88-dev.github.io/ de ARCKHÉccbot</a> · <a href=\"https://eventos.ARCKHÉ.pro/do-chat-ao-agente/\">eventos.ARCKHÉ.pro/do-chat-ao-agente</a> · <a href=\"https://ARCKHÉ AI/\">ARCKHÉ AI</a> · <a href=\"https://www.ARCKHÉ AI/cursos/326-do-chat-ao-agente-degrau-3-filas-dez-tarefas-e-va-dormir-ARCKHÉccbot/\">Ficha completa de este curso en ARCKHÉ AI</a> · <a href=\"https://www.ARCKHÉ AI/aprender-inteligencia-artificial/\">Guía: cómo aprender inteligencia artificial</a>",
   "videos": {
     "jornada-ia": {
       "titulo": "Del chat al agente: la visión general",
       "duracao": "2 min 27 s",
-      "mp4": "https://github.com/inematds/jornada-agentes/releases/download/video-v2.0.0/jornada-jornada-ia-16x9.mp4",
+      "mp4": "https://github.com/linnoff88-dev/jornada-agentes/releases/download/video-v2.0.0/jornada-jornada-ia-16x9.mp4",
       "vtt": "assets/vtt/jornada-ia.vtt",
       "poster": "assets/img/jornada-ia.jpg",
-      "pagina": "https://inematds.github.io/jornada-agentes/serie/jornada-ia/",
+      "pagina": "https://linnoff88-dev.github.io/
       "idiomas": {
         "en": {
           "vtt": "assets/vtt/jornada-ia-en.vtt",
-          "pagina": "https://inematds.github.io/jornada-agentes/serie/jornada-ia/en/"
+          "pagina": "https://linnoff88-dev.github.io/
         },
         "es": {
           "vtt": "assets/vtt/jornada-ia-es.vtt",
-          "pagina": "https://inematds.github.io/jornada-agentes/serie/jornada-ia/es/"
+          "pagina": "https://linnoff88-dev.github.io/
         }
       }
     },
     "seq3-filas": {
       "titulo": "Diez tareas y vete a dormir",
       "duracao": "1 min 33 s",
-      "mp4": "https://github.com/inematds/jornada-agentes/releases/download/video-v2.0.0/jornada-seq3-filas-16x9.mp4",
+      "mp4": "https://github.com/linnoff88-dev/jornada-agentes/releases/download/video-v2.0.0/jornada-seq3-filas-16x9.mp4",
       "vtt": "assets/vtt/seq3-filas.vtt",
       "poster": "assets/img/seq3-filas.jpg",
-      "pagina": "https://inematds.github.io/jornada-agentes/serie/seq3-filas/",
+      "pagina": "https://linnoff88-dev.github.io/
       "idiomas": {
         "en": {
           "vtt": "assets/vtt/seq3-filas-en.vtt",
-          "pagina": "https://inematds.github.io/jornada-agentes/serie/seq3-filas/en/"
+          "pagina": "https://linnoff88-dev.github.io/
         },
         "es": {
           "vtt": "assets/vtt/seq3-filas-es.vtt",
-          "pagina": "https://inematds.github.io/jornada-agentes/serie/seq3-filas/es/"
+          "pagina": "https://linnoff88-dev.github.io/
         }
       }
     }
@@ -59,11 +59,11 @@
   "inicio": {
     "kicker": "Curso · nivel 3 de Del chat al agente · 7 clases",
     "titulo": "Colas: manda diez tareas, vete a dormir y revisa el resultado por la mañana",
-    "lead": "Un agente en el chat hace una cosa a la vez y solo mientras tú miras. En este curso armas tu cola: decides qué entra, entiendes la cola casera, instalas inemaccbot, pones compuertas antes de lo que importa y aprendes a revisar el lote al día siguiente.",
+    "lead": "Un agente en el chat hace una cosa a la vez y solo mientras tú miras. En este curso armas tu cola: decides qué entra, entiendes la cola casera, instalas ARCKHÉccbot, pones compuertas antes de lo que importa y aprendes a revisar el lote al día siguiente.",
     "cta": "Empezar por la clase 1",
     "cta2": {
       "t": "Volver a la visión general de la formación",
-      "href": "https://inematds.github.io/do-chat-ao-agente-v72/es/"
+      "href": "https://linnoff88-dev.github.io/
     },
     "capa_alt": "Oficina de noche con una laptop que muestra una lista de tareas terminadas y el celular al lado.",
     "numeros": [
@@ -100,7 +100,7 @@
         "itens": [
           "Separar tus tareas en: va a la cola, va con compuerta, se queda contigo.",
           "Ejecutar una cola casera y ver la reanudación después de una interrupción.",
-          "Instalar inemaccbot hasta que /ping responda en tu Telegram.",
+          "Instalar ARCKHÉccbot hasta que /ping responda en tu Telegram.",
           "Enviar un lote en una noche, aprobar en la compuerta y medir por la mañana cuántas salieron bien a la primera.",
           "Convertir la tarea que más falló en una regla nueva."
         ]

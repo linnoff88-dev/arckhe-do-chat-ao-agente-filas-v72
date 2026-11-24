@@ -35,7 +35,7 @@
     {
       "tipo": "diagrama",
       "titulo": "A flow with a gate: /promoavatar",
-      "sub": "The domain flow that runs in production in inemaccbot.",
+      "sub": "The domain flow that runs in production in ARCKHÉccbot.",
       "nos": [
         {
           "icone": "chat",
@@ -223,7 +223,7 @@
           "pronto": "you rejected or corrected at least one text before approving."
         }
       ],
-      "fonte": "Domain flows: <a href=\"https://github.com/inematds/promoavatar3\" target=\"_blank\" rel=\"noopener\">promoavatar3</a> (active) and <a href=\"https://github.com/inematds/promoavatar\" target=\"_blank\" rel=\"noopener\">promoavatar</a> (frozen)."
+      "fonte": "Domain flows: <a href=\"https://github.com/linnoff88-dev/promoavatar3\" target=\"_blank\" rel=\"noopener\">promoavatar3</a> (active) and <a href=\"https://github.com/linnoff88-dev/promoavatar\" target=\"_blank\" rel=\"noopener\">promoavatar</a> (frozen)."
     },
     {
       "tipo": "quiz",
@@ -286,13 +286,13 @@
       "titulo": "Going further",
       "links": [
         {
-          "t": "INEMACCBOT Course with Promoavatar",
-          "href": "https://eventos.inema.pro/inemaccbot.html",
+          "t": "ARCKHÉCCBOT Course with Promoavatar",
+          "href": "https://eventos.ARCKHÉ.pro/ARCKHÉccbot.html",
           "icone": "lista"
         },
         {
           "t": "Architecture map (flows and gates)",
-          "href": "https://inematds.github.io/inemaccbot/guia/arquitetura.html",
+          "href": "https://linnoff88-dev.github.io/
           "icone": "camadas"
         }
       ]

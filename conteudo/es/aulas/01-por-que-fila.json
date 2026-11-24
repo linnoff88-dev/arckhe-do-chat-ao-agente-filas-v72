@@ -28,7 +28,7 @@
     },
     {
       "icone": "robo",
-      "t": "Dónde entra inemaccbot en el nivel 3"
+      "t": "Dónde entra ARCKHÉccbot en el nivel 3"
     }
   ],
   "secoes": [
@@ -67,7 +67,7 @@
               "t": "Sobrevive a las caídas"
             }
           ],
-          "detalhe": "El pedido se guarda antes de ejecutarse. En inemaccbot, la cola es una base de datos SQLite en el disco; en la cola casera, un archivo por tarea en una carpeta. ¿Se apagó? La tarea sigue ahí.",
+          "detalhe": "El pedido se guarda antes de ejecutarse. En ARCKHÉccbot, la cola es una base de datos SQLite en el disco; en la cola casera, un archivo por tarea en una carpeta. ¿Se apagó? La tarea sigue ahí.",
           "forte": true
         },
         {
@@ -100,7 +100,7 @@
         }
       ],
       "volta": "Ejecutar de nuevo solo toma lo que quedó",
-      "legenda": "En inemaccbot el pedido llega por Telegram; en la cola casera de la clase 3, es un archivo .md en una carpeta. La idea es la misma.",
+      "legenda": "En ARCKHÉccbot el pedido llega por Telegram; en la cola casera de la clase 3, es un archivo .md en una carpeta. La idea es la misma.",
       "rolagem": true,
       "rolagem_fim": {
         "titulo": "Por qué esto te deja alejarte",
@@ -117,7 +117,7 @@
           "sub": "durable",
           "texto": [
             "El pedido se convierte en un registro en disco en el momento en que llega. No depende de una ventana abierta ni de la memoria del programa.",
-            "En inemaccbot, cada pedido se convierte en un <b>job</b> en una tabla de la base de datos. Tiene número (<code>j13</code>), cola, situación y cuántos intentos le quedan."
+            "En ARCKHÉccbot, cada pedido se convierte en un <b>job</b> en una tabla de la base de datos. Tiene número (<code>j13</code>), cola, situación y cuántos intentos le quedan."
           ],
           "exemplo": {
             "rot": "Señal en el día a día",
@@ -129,7 +129,7 @@
           "sub": "orden",
           "texto": [
             "Cada trabajador toma una tarea, la termina y solo entonces toma la siguiente. Esto evita que dos trabajos peleen por la misma máquina.",
-            "En inemaccbot hay cinco colas con límites diferentes: la de renderizado corre <b>una a la vez a propósito</b>, porque usa la tarjeta de video; la de red acepta diez."
+            "En ARCKHÉccbot hay cinco colas con límites diferentes: la de renderizado corre <b>una a la vez a propósito</b>, porque usa la tarjeta de video; la de red acepta diez."
           ]
         },
         {
@@ -137,7 +137,7 @@
           "sub": "recuperación",
           "texto": [
             "Si el proceso se cae a la mitad, la tarea no queda perdida ni a medias para siempre. En el siguiente arranque, lo que estaba en curso vuelve a la cola.",
-            "inemaccbot hace esto antes de aceptar trabajo nuevo y lo escribe en el log: <code>boot: recuperação de leases — requeued=N failed=M</code>. <i>Requeued</i> es lo que volvió a la cola; <i>failed</i> es lo que ya había gastado todos los intentos."
+            "ARCKHÉccbot hace esto antes de aceptar trabajo nuevo y lo escribe en el log: <code>boot: recuperação de leases — requeued=N failed=M</code>. <i>Requeued</i> es lo que volvió a la cola; <i>failed</i> es lo que ya había gastado todos los intentos."
           ]
         },
         {
@@ -145,7 +145,7 @@
           "sub": "rastreo",
           "texto": [
             "Una tarea que dio error no desaparece ni traba la cola: va al lado de las fallas, con el motivo escrito, y la cola sigue.",
-            "Los prompts de inemaccbot exigen que el agente termine con <code>RESULT: &lt;caminho&gt;</code> o <code>ERRO: &lt;motivo curto&gt;</code>. Ese contrato es lo que permite saber, sin abrir nada, cómo terminó cada tarea."
+            "Los prompts de ARCKHÉccbot exigen que el agente termine con <code>RESULT: &lt;caminho&gt;</code> o <code>ERRO: &lt;motivo curto&gt;</code>. Ese contrato es lo que permite saber, sin abrir nada, cómo terminó cada tarea."
           ]
         }
       ]
@@ -161,7 +161,7 @@
           "conteudo": "fila/\n  entrada/   # pedidos esperando su turno\n  rodando/   # la tarea que está con el agente ahora\n  feito/     # pedido + respuesta\n  falhou/    # pedido + ERRO y el motivo"
         },
         {
-          "rot": "inemaccbot (situación del job en la base de datos)",
+          "rot": "ARCKHÉccbot (situación del job en la base de datos)",
           "icone": "memoria",
           "conteudo": "queued    # en la cola, esperando su turno\nrunning   # un trabajador la tomó y la está ejecutando\ndone      # terminó con resultado\nfailed    # agotó los intentos, con el motivo\ncanceled  # tú la cancelaste (/cancelar)"
         }
@@ -171,11 +171,11 @@
         "abas": [
           {
             "rot": "Cómo retoma cada una",
-            "html": "<ul><li><b>Cola casera:</b> al ejecutar de nuevo, lo que esté en <code>rodando/</code> vuelve a <code>entrada/</code>.</li><li><b>inemaccbot:</b> el trabajador renueva un \"alquiler\" (lease) de la tarea mientras trabaja. Si el alquiler vence porque el proceso se cayó, la tarea vuelve a <code>queued</code> mientras queden intentos.</li></ul>"
+            "html": "<ul><li><b>Cola casera:</b> al ejecutar de nuevo, lo que esté en <code>rodando/</code> vuelve a <code>entrada/</code>.</li><li><b>ARCKHÉccbot:</b> el trabajador renueva un \"alquiler\" (lease) de la tarea mientras trabaja. Si el alquiler vence porque el proceso se cayó, la tarea vuelve a <code>queued</code> mientras queden intentos.</li></ul>"
           },
           {
             "rot": "Quién decide qué es una falla",
-            "html": "<p>En la cola casera: respuesta vacía o código de error del agente. En inemaccbot: el agente no terminó con <code>RESULT:</code>, se agotó el plazo (<code>timeout</code>) o se acabaron los intentos (<code>max_tentativas</code>, de 2 a 4 en las skills del catálogo).</p>"
+            "html": "<p>En la cola casera: respuesta vacía o código de error del agente. En ARCKHÉccbot: el agente no terminó con <code>RESULT:</code>, se agotó el plazo (<code>timeout</code>) o se acabaron los intentos (<code>max_tentativas</code>, de 2 a 4 en las skills del catálogo).</p>"
           }
         ]
       }
@@ -183,7 +183,7 @@
     {
       "tipo": "video",
       "titulo": "El nivel 3 en video",
-      "sub": "La cola durable de inemaccbot y la compuerta de aprobación, en un minuto y medio.",
+      "sub": "La cola durable de ARCKHÉccbot y la compuerta de aprobación, en un minuto y medio.",
       "chave": "seq3-filas"
     },
     {
@@ -235,18 +235,18 @@
       "titulo": "Para ir más allá",
       "links": [
         {
-          "t": "Guía de inemaccbot: qué es y cómo funciona",
-          "href": "https://inematds.github.io/inemaccbot/guia/",
+          "t": "Guía de ARCKHÉccbot: qué es y cómo funciona",
+          "href": "https://linnoff88-dev.github.io/
           "icone": "fila"
         },
         {
-          "t": "Mapa de la arquitectura de inemaccbot",
-          "href": "https://inematds.github.io/inemaccbot/guia/arquitetura.html",
+          "t": "Mapa de la arquitectura de ARCKHÉccbot",
+          "href": "https://linnoff88-dev.github.io/
           "icone": "camadas"
         },
         {
           "t": "Visión general de la formación Del chat al agente",
-          "href": "https://inematds.github.io/do-chat-ao-agente-v72/es/",
+          "href": "https://linnoff88-dev.github.io/
           "icone": "voltar"
         }
       ]

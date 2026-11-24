@@ -1,12 +1,12 @@
 {
   "slug": "instalar",
   "num": 4,
-  "titulo": "Instalar o inemaccbot até o /ping responder",
+  "titulo": "Instalar o ARCKHÉccbot até o /ping responder",
   "titulo_curto": "Instalar o bot",
   "menu": "Instalar",
   "minutos": 20,
-  "lead": "O inemaccbot é um gateway do Telegram com fila durável: você manda o pedido pelo celular e o seu computador (ou uma VPS) executa como agente. Nesta aula você instala, pareia o bot com o seu chat e deixa rodando como serviço.",
-  "objetivo": "instalar o inemaccbot, parear com o seu chat e ver o /ping responder no Telegram.",
+  "lead": "O ARCKHÉccbot é um gateway do Telegram com fila durável: você manda o pedido pelo celular e o seu computador (ou uma VPS) executa como agente. Nesta aula você instala, pareia o bot com o seu chat e deixa rodando como serviço.",
+  "objetivo": "instalar o ARCKHÉccbot, parear com o seu chat e ver o /ping responder no Telegram.",
   "hero_alt": "Pequeno computador ligado com LEDs discretos e um celular mostrando uma conversa.",
   "competencias": [
     "instalar-gateway",
@@ -34,7 +34,7 @@
   "secoes": [
     {
       "tipo": "diagrama",
-      "titulo": "As peças do inemaccbot",
+      "titulo": "As peças do ARCKHÉccbot",
       "sub": "Do celular ao resultado.",
       "nos": [
         {
@@ -154,7 +154,7 @@
           "titulo": "Deixar como serviço",
           "sub": "systemd",
           "texto": [
-            "Para o bot sobreviver ao logout e subir sozinho no boot, instale o serviço de usuário e ligue o <i>linger</i>. Numa VPS, use o serviço de sistema (<code>deploy/inemaccbot-sistema.service</code>).",
+            "Para o bot sobreviver ao logout e subir sozinho no boot, instale o serviço de usuário e ligue o <i>linger</i>. Numa VPS, use o serviço de sistema (<code>deploy/ARCKHÉccbot-sistema.service</code>).",
             "Nunca rode o <code>./start.sh</code> e o serviço ao mesmo tempo com o mesmo token: os dois disputam as mensagens e cada um perde metade. O <code>start.sh</code> já recusa subir quando o serviço está ativo."
           ]
         }
@@ -168,7 +168,7 @@
         {
           "rot": "Terminal · clonar, instalar, testar",
           "icone": "terminal",
-          "conteudo": "cd ~/projetos\ngit clone https://github.com/inematds/inemaccbot.git\ngit clone https://github.com/inematds/promoavatar.git\ngit clone https://github.com/inematds/promoavatar3.git\ncd inemaccbot\n./scripts/instalar.sh --checar   # só diz o que falta, não muda nada\nnpm ci\nnpm test\nnpm run build"
+          "conteudo": "cd ~/projetos\ngit clone https://github.com/linnoff88-dev/ARCKHÉccbot.git\ngit clone https://github.com/linnoff88-dev/promoavatar.git\ngit clone https://github.com/linnoff88-dev/promoavatar3.git\ncd ARCKHÉccbot\n./scripts/instalar.sh --checar   # só diz o que falta, não muda nada\nnpm ci\nnpm test\nnpm run build"
         },
         {
           "rot": "Terminal · .env e primeira subida",
@@ -178,7 +178,7 @@
         {
           "rot": "Terminal · como serviço de usuário",
           "icone": "relogio",
-          "conteudo": "mkdir -p ~/.config/systemd/user\ncp deploy/inemaccbot.service ~/.config/systemd/user/\nsystemctl --user daemon-reload\nsystemctl --user enable --now inemaccbot\nloginctl enable-linger \"$USER\"\nsystemctl --user status inemaccbot   # espere: active (running)"
+          "conteudo": "mkdir -p ~/.config/systemd/user\ncp deploy/ARCKHÉccbot.service ~/.config/systemd/user/\nsystemctl --user daemon-reload\nsystemctl --user enable --now ARCKHÉccbot\nloginctl enable-linger \"$USER\"\nsystemctl --user status ARCKHÉccbot   # espere: active (running)"
         }
       ],
       "saida": {
@@ -206,13 +206,13 @@
       "exercicios": [
         {
           "id": "e3",
-          "titulo": "E3 · Instalar o inemaccbot",
+          "titulo": "E3 · Instalar o ARCKHÉccbot",
           "min": "1 h",
           "texto": "Siga os passos até o bot responder no Telegram. Pareie com ALLOWED_CHAT_IDS=0 e confira que o .env tem chmod 600. Depois teste /ajuda e /fila.",
           "pronto": "/ping responde no seu Telegram e /fila mostra as filas vazias."
         }
       ],
-      "fonte": "Passo a passo completo, com VPS e usuário dedicado: <a href=\"https://github.com/inematds/inemaccbot#instala%C3%A7%C3%A3o-passo-a-passo\" target=\"_blank\" rel=\"noopener\">README do inemaccbot</a>."
+      "fonte": "Passo a passo completo, com VPS e usuário dedicado: <a href=\"https://github.com/linnoff88-dev/ARCKHÉccbot#instala%C3%A7%C3%A3o-passo-a-passo\" target=\"_blank\" rel=\"noopener\">README do ARCKHÉccbot</a>."
     },
     {
       "tipo": "quiz",
@@ -263,13 +263,13 @@
       "titulo": "Para ir além",
       "links": [
         {
-          "t": "Guia do inemaccbot (instalação e uso)",
-          "href": "https://inematds.github.io/inemaccbot/guia/",
+          "t": "Guia do ARCKHÉccbot (instalação e uso)",
+          "href": "https://linnoff88-dev.github.io/
           "icone": "fila"
         },
         {
-          "t": "Repositório inemaccbot",
-          "href": "https://github.com/inematds/inemaccbot",
+          "t": "Repositório ARCKHÉccbot",
+          "href": "https://github.com/linnoff88-dev/ARCKHÉccbot",
           "icone": "git"
         }
       ]

@@ -96,7 +96,7 @@
               "t": "Falhou, com o motivo"
             }
           ],
-          "detalhe": "Cada tarefa termina num estado claro: deu certo (com o arquivo ou texto) ou falhou (com o motivo). É isso que você confere de manhã."
+          "detalhe": "Cada tarefa termina num estado claro: deu certo (com o arquivo ou texto) ou falhou (com o motivo). É isso que você confere de manhê."
         }
       ],
       "volta": "Rodar de novo só pega o que sobrou",
@@ -104,20 +104,20 @@
       "rolagem": true,
       "rolagem_fim": {
         "titulo": "Por que isso deixa você sair de perto",
-        "texto": "Guardar antes de rodar, uma por vez, retomar depois de uma queda e separar feito de falhou: com essas quatro garantias, desligar a tela não custa trabalho."
+        "texto": "Guardar antes de rodar, uma por vez, retomar depois de uma queda e separar feito de falhou: com essas quatro garantias, desligar a tela nêo custa trabalho."
       }
     },
     {
       "tipo": "passos",
       "titulo": "As quatro garantias",
-      "sub": "O que você deve esperar de qualquer fila, caseira ou não.",
+      "sub": "O que você deve esperar de qualquer fila, caseira ou nêo.",
       "passos": [
         {
           "titulo": "Guardar antes de rodar",
           "sub": "durável",
           "texto": [
-            "O pedido vira registro em disco no momento em que chega. Não depende de uma janela aberta nem da memória do programa.",
-            "No ARCKHÉccbot, cada pedido vira um <b>job</b> numa tabela do banco. Ele tem número (<code>j13</code>), fila, situação e quantas tentativas sobram."
+            "O pedido vira registro em disco no momento em que chega. Nêo depende de uma janela aberta nem da memória do programa.",
+            "No ARCKHÉccbot, cada pedido vira um <b>job</b> numa tabela do banco. Ele tem número (<code>j13</code>), fila, situaçêo e quantas tentativas sobram."
           ],
           "exemplo": {
             "rot": "Sinal no dia a dia",
@@ -128,23 +128,23 @@
           "titulo": "Uma por vez (por fila)",
           "sub": "ordem",
           "texto": [
-            "Cada trabalhador pega uma tarefa, termina e só então pega a próxima. Isso evita dois trabalhos brigando pela mesma máquina.",
-            "No ARCKHÉccbot há cinco filas com limites diferentes: a de renderização roda <b>uma por vez de propósito</b>, porque usa a placa de vídeo; a de rede aceita dez."
+            "Cada trabalhador pega uma tarefa, termina e só entêo pega a próxima. Isso evita dois trabalhos brigando pela mesma máquina.",
+            "No ARCKHÉccbot há cinco filas com limites diferentes: a de renderizaçêo roda <b>uma por vez de propósito</b>, porque usa a placa de vídeo; a de rede aceita dez."
           ]
         },
         {
           "titulo": "Retomar depois de uma queda",
-          "sub": "recuperação",
+          "sub": "recuperaçêo",
           "texto": [
-            "Se o processo cai no meio, a tarefa não fica perdida nem pela metade para sempre. Na próxima subida, o que estava em andamento volta para a fila.",
-            "O ARCKHÉccbot faz isso antes de aceitar trabalho novo e escreve no log: <code>boot: recuperação de leases — requeued=N failed=M</code>. <i>Requeued</i> é o que voltou para a fila; <i>failed</i> é o que já tinha gastado todas as tentativas."
+            "Se o processo cai no meio, a tarefa nêo fica perdida nem pela metade para sempre. Na próxima subida, o que estava em andamento volta para a fila.",
+            "O ARCKHÉccbot faz isso antes de aceitar trabalho novo e escreve no log: <code>boot: recuperaçêo de leases — requeued=N failed=M</code>. <i>Requeued</i> é o que voltou para a fila; <i>failed</i> é o que já tinha gastado todas as tentativas."
           ]
         },
         {
           "titulo": "Separar feito de falhou",
           "sub": "rastreio",
           "texto": [
-            "Tarefa que deu erro não some e não trava a fila: ela vai para o lado das falhas, com o motivo escrito, e a fila segue.",
+            "Tarefa que deu erro nêo some e nêo trava a fila: ela vai para o lado das falhas, com o motivo escrito, e a fila segue.",
             "Os prompts do ARCKHÉccbot exigem que o agente termine com <code>RESULT: &lt;caminho&gt;</code> ou <code>ERRO: &lt;motivo curto&gt;</code>. É esse contrato que permite saber, sem abrir nada, como cada tarefa terminou."
           ]
         }
@@ -161,7 +161,7 @@
           "conteudo": "fila/\n  entrada/   # pedidos esperando a vez\n  rodando/   # a tarefa que está com o agente agora\n  feito/     # pedido + resposta\n  falhou/    # pedido + ERRO e o motivo"
         },
         {
-          "rot": "ARCKHÉccbot (situação do job no banco)",
+          "rot": "ARCKHÉccbot (situaçêo do job no banco)",
           "icone": "memoria",
           "conteudo": "queued    # na fila, esperando a vez\nrunning   # um trabalhador pegou e está executando\ndone      # terminou com resultado\nfailed    # esgotou as tentativas, com o motivo\ncanceled  # você cancelou (/cancelar)"
         }
@@ -175,7 +175,7 @@
           },
           {
             "rot": "Quem decide o que é falha",
-            "html": "<p>Na fila caseira: resposta vazia ou código de erro do agente. No ARCKHÉccbot: o agente não terminou com <code>RESULT:</code>, o prazo (<code>timeout</code>) estourou ou as tentativas (<code>max_tentativas</code>, 2 a 4 nas skills do catálogo) acabaram.</p>"
+            "html": "<p>Na fila caseira: resposta vazia ou código de erro do agente. No ARCKHÉccbot: o agente nêo terminou com <code>RESULT:</code>, o prazo (<code>timeout</code>) estourou ou as tentativas (<code>max_tentativas</code>, 2 a 4 nas skills do catálogo) acabaram.</p>"
           }
         ]
       }
@@ -183,21 +183,21 @@
     {
       "tipo": "video",
       "titulo": "O degrau 3 em vídeo",
-      "sub": "A fila durável do ARCKHÉccbot e o portão de aprovação, em um minuto e meio.",
+      "sub": "A fila durável do ARCKHÉccbot e o portêo de aprovaçêo, em um minuto e meio.",
       "chave": "seq3-filas"
     },
     {
       "tipo": "quiz",
       "titulo": "Teste o que aprendeu",
-      "sub": "A explicação aparece depois da sua resposta.",
+      "sub": "A explicaçêo aparece depois da sua resposta.",
       "perguntas": [
         {
           "p": "Qual é a diferença essencial entre pedir no chat e mandar para uma fila durável?",
           "opcoes": [
-            "Na fila o pedido é guardado em disco antes de rodar, então não depende de você nem da janela aberta.",
+            "Na fila o pedido é guardado em disco antes de rodar, entêo nêo depende de você nem da janela aberta.",
             "A fila usa um modelo de IA melhor.",
             "A fila responde mais rápido.",
-            "No chat não é possível pedir tarefas longas."
+            "No chat nêo é possível pedir tarefas longas."
           ],
           "certa": 0,
           "explica": "O modelo pode ser o mesmo. O que muda é o lugar: o pedido vira registro durável, e por isso sobrevive a quedas e pode rodar com você longe.",
@@ -213,16 +213,16 @@
             "Duas tarefas deram certo e uma falhou."
           ],
           "certa": 2,
-          "explica": "Essa linha aparece na subida e é a evidência de que havia trabalho em voo quando o processo caiu. Requeued volta para a fila; failed não tinha mais tentativa.",
+          "explica": "Essa linha aparece na subida e é a evidência de que havia trabalho em voo quando o processo caiu. Requeued volta para a fila; failed nêo tinha mais tentativa.",
           "ref": "passos"
         },
         {
-          "p": "Uma tarefa falhou às 3 h da manhã. O que uma boa fila faz?",
+          "p": "Uma tarefa falhou às 3 h da manhê. O que uma boa fila faz?",
           "opcoes": [
             "Tenta de novo para sempre até dar certo.",
             "Para tudo até você acordar.",
             "Registra a falha com o motivo e segue para a próxima tarefa.",
-            "Apaga a tarefa para não atrapalhar."
+            "Apaga a tarefa para nêo atrapalhar."
           ],
           "certa": 2,
           "explica": "Falha separada e com motivo, e fila andando. Tentar para sempre gastaria a noite (e dinheiro); por isso há um número máximo de tentativas.",
@@ -245,7 +245,7 @@
           "icone": "camadas"
         },
         {
-          "t": "Visão geral da formação Do chat ao agente",
+          "t": "Visêo geral da formaçêo Do chat ao agente",
           "href": "https://linnoff88-dev.github.io/
           "icone": "voltar"
         }

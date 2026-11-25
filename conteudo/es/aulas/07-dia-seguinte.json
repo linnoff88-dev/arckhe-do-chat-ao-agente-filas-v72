@@ -149,7 +149,7 @@
         {
           "rot": "conferencia.md",
           "icone": "arquivo",
-          "conteudo": "## Mañana de AAAA-MM-DD\n\n| # | Tarea | Resultado | ¿Correcta a la 1ª? | Qué falló | Acción |\n|---|---|---|---|---|---|\n| 1 | Transcrever reunião de segunda | texto | sí | — | — |\n| 2 | Explicativo da fila | video | no | quedó demasiado largo | regla nueva |\n| 3 |  |  |  |  |  |\n\nCorrectas a la primera: __ de __\nTarea que más falló: __\nRegla nueva: __"
+          "conteudo": "## Mañana de AAAA-MM-DD\n\n| # | Tarea | Resultado | ¿Correcta a la 1ª? | Qué falló | Acción |\n|---|---|---|---|---|---|\n| 1 | Transcrever reuniêo de segunda | texto | sí | — | — |\n| 2 | Explicativo da fila | video | no | quedó demasiado largo | regla nueva |\n| 3 |  |  |  |  |  |\n\nCorrectas a la primera: __ de __\nTarea que más falló: __\nRegla nueva: __"
         },
         {
           "rot": "Pedido para que tu agente proponga la regla",

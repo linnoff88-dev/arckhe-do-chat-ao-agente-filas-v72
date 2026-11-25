@@ -1,4 +1,4 @@
-# Filas: dez tarefas e vÃ¡ dormir â€” curso (ARCKHÉ Learning v7.2)
+# Filas: dez tarefas e vêÂ¡ dormir ê¢â¬â curso (ARCKHê Learning v7.2)
 
 <div align="center">
   <img src="capa/logo.svg" alt="Arckhé AI" height="48" />
@@ -6,31 +6,31 @@
 </div>
 
 
-Curso completo do **degrau 3** da formaÃ§Ã£o [Do chat ao agente](https://linnoff88-dev.github.io/ mandar vÃ¡rias tarefas para uma fila durÃ¡vel, sair de perto e encontrar o trabalho feito, com portÃ£o onde precisa de vocÃª. A ferramenta Ã© o [ARCKHÉccbot](https://linnoff88-dev.github.io/ (gateway do Telegram + fila durÃ¡vel).
+Curso completo do **degrau 3** da formaêÂ§êÂ£o [Do chat ao agente](https://linnoff88-dev.github.io/ mandar vêÂ¡rias tarefas para uma fila durêÂ¡vel, sair de perto e encontrar o trabalho feito, com portêÂ£o onde precisa de vocêÂª. A ferramenta êÂ© o [ARCKHêccbot](https://linnoff88-dev.github.io/ (gateway do Telegram + fila durêÂ¡vel).
 
 **Abrir o curso:** https://linnoff88-dev.github.io/
 
-**Other languages:** [English](https://linnoff88-dev.github.io/ Â· [EspaÃ±ol](https://linnoff88-dev.github.io/
+**Other languages:** [English](https://linnoff88-dev.github.io/ êÂ· [EspaêÂ±ol](https://linnoff88-dev.github.io/
 
 ## As 7 aulas
 
-1. **Do chat Ã  fila** â€” as quatro garantias de uma fila durÃ¡vel.
-2. **O que vai para a fila** â€” triagem em sozinha, com portÃ£o ou fica com vocÃª.
-3. **A fila caseira em 30 linhas** â€” `fila-caseira.sh`, interromper e retomar (simulaÃ§Ã£o).
-4. **Instalar o ARCKHÉccbot** â€” atÃ© o `/ping` responder; pareamento e segredos.
-5. **Mandar o lote** â€” skills, as cinco filas, `/fila`, `/jobs`, cÃ³digo 143.
-6. **PortÃµes** â€” fluxo com portÃ£o, `/pronto`, reprovar com correÃ§Ã£o, `| sombra` (simulaÃ§Ã£o).
-7. **O dia seguinte** â€” conferir, medir as certas na primeira, regra nova e plano com datas.
+1. **Do chat êÂ  fila** ê¢â¬â as quatro garantias de uma fila durêÂ¡vel.
+2. **O que vai para a fila** ê¢â¬â triagem em sozinha, com portêÂ£o ou fica com vocêÂª.
+3. **A fila caseira em 30 linhas** ê¢â¬â `fila-caseira.sh`, interromper e retomar (simulaêÂ§êÂ£o).
+4. **Instalar o ARCKHêccbot** ê¢â¬â atêÂ© o `/ping` responder; pareamento e segredos.
+5. **Mandar o lote** ê¢â¬â skills, as cinco filas, `/fila`, `/jobs`, cêÂ³digo 143.
+6. **PortêÂµes** ê¢â¬â fluxo com portêÂ£o, `/pronto`, reprovar com correêÂ§êÂ£o, `| sombra` (simulaêÂ§êÂ£o).
+7. **O dia seguinte** ê¢â¬â conferir, medir as certas na primeira, regra nova e plano com datas.
 
 ## Como funciona
 
-| Arquivo | O que Ã© |
+| Arquivo | O que êÂ© |
 |---|---|
-| `conteudo/pt/curso.json` | nome, vÃ­deos, pÃ¡gina inicial e textos da interface |
+| `conteudo/pt/curso.json` | nome, vêÂ­deos, pêÂ¡gina inicial e textos da interface |
 | `conteudo/pt/aulas/*.json` | uma aula por arquivo |
 | `gerar.py` | monta `index.html` e `aulas/<slug>/index.html` |
-| `validar.py` | portÃ£o de qualidade (`--links` confere os links externos) |
-| `assets/` | CSS, JS, imagens e legendas (`filas.js`/`filas.css`: simulaÃ§Ã£o do portÃ£o) |
+| `validar.py` | portêÂ£o de qualidade (`--links` confere os links externos) |
+| `assets/` | CSS, JS, imagens e legendas (`filas.js`/`filas.css`: simulaêÂ§êÂ£o do portêÂ£o) |
 
 ```bash
 python3 gerar.py && python3 validar.py --links
@@ -44,17 +44,17 @@ python3 gerar.py --lang en && python3 gerar.py --lang es
 python3 validar.py --lang en && python3 validar.py --lang es
 ```
 
-HTML estÃ¡tico, sem build e sem backend. O progresso fica sÃ³ no navegador de quem estuda.
+HTML estêÂ¡tico, sem build e sem backend. O progresso fica sêÂ³ no navegador de quem estuda.
 
-VÃ­deos da sÃ©rie *Do chat ao agente* ([jornada-agentes](https://github.com/linnoff88-dev/jornada-agentes), release `video-v2.0.0`). ExercÃ­cios originais em [`exercicios/03-filas.md`](https://github.com/linnoff88-dev/jornada-agentes/blob/main/exercicios/03-filas.md).
+VêÂ­deos da sêÂ©rie *Do chat ao agente* ([jornada-agentes](https://github.com/linnoff88-dev/jornada-agentes), release `video-v2.0.0`). ExercêÂ­cios originais em [`exercicios/03-filas.md`](https://github.com/linnoff88-dev/jornada-agentes/blob/main/exercicios/03-filas.md).
 
-ConteÃºdo aberto e gratuito Â· [ARCKHÉ AI](https://ARCKHÉ AI)
+ConteêÂºdo aberto e gratuito êÂ· [ARCKHê AI](https://ARCKHê AI)
 
-## Mais no ARCKHÉ AI
+## Mais no ARCKHê AI
 
-- [Ficha completa deste curso](https://www.ARCKHÉ AI/cursos/326-do-chat-ao-agente-degrau-3-filas-dez-tarefas-e-va-dormir-ARCKHÉccbot/)
-- [Guia: como aprender inteligÃªncia artificial](https://www.ARCKHÉ AI/aprender-inteligencia-artificial/)
-- [Todos os cursos](https://www.ARCKHÉ AI/cursos/)
+- [Ficha completa deste curso](https://www.ARCKHê AI/cursos/326-do-chat-ao-agente-degrau-3-filas-dez-tarefas-e-va-dormir-ARCKHêccbot/)
+- [Guia: como aprender inteligêÂªncia artificial](https://www.ARCKHê AI/aprender-inteligencia-artificial/)
+- [Todos os cursos](https://www.ARCKHê AI/cursos/)
 
 ---
 

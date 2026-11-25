@@ -137,7 +137,7 @@
           "sub": "recuperación",
           "texto": [
             "Si el proceso se cae a la mitad, la tarea no queda perdida ni a medias para siempre. En el siguiente arranque, lo que estaba en curso vuelve a la cola.",
-            "ARCKHÉccbot hace esto antes de aceptar trabajo nuevo y lo escribe en el log: <code>boot: recuperação de leases — requeued=N failed=M</code>. <i>Requeued</i> es lo que volvió a la cola; <i>failed</i> es lo que ya había gastado todos los intentos."
+            "ARCKHÉccbot hace esto antes de aceptar trabajo nuevo y lo escribe en el log: <code>boot: recuperaçêo de leases — requeued=N failed=M</code>. <i>Requeued</i> es lo que volvió a la cola; <i>failed</i> es lo que ya había gastado todos los intentos."
           ]
         },
         {

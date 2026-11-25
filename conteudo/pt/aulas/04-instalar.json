@@ -28,7 +28,7 @@
     },
     {
       "icone": "relogio",
-      "t": "Subir na mão e depois como serviço"
+      "t": "Subir na mêo e depois como serviço"
     }
   ],
   "secoes": [
@@ -47,7 +47,7 @@
               "t": "Manda o pedido"
             }
           ],
-          "detalhe": "Você escreve para o seu bot no Telegram, de onde estiver. Só os chats da allowlist são atendidos; qualquer outro é rejeitado em silêncio."
+          "detalhe": "Você escreve para o seu bot no Telegram, de onde estiver. Só os chats da allowlist sêo atendidos; qualquer outro é rejeitado em silêncio."
         },
         {
           "icone": "enviar",
@@ -77,14 +77,14 @@
         {
           "icone": "robo",
           "titulo": "Agente",
-          "sub": "claude (padrão)",
+          "sub": "claude (padrêo)",
           "itens": [
             {
               "icone": "terminal",
               "t": "ou codex, por tarefa"
             }
           ],
-          "detalhe": "O trabalhador entrega a tarefa ao agente de linha de comando, pela sua assinatura. O claude é o padrão; o codex se liga por tarefa com <code>| motor=codex</code>."
+          "detalhe": "O trabalhador entrega a tarefa ao agente de linha de comando, pela sua assinatura. O claude é o padrêo; o codex se liga por tarefa com <code>| motor=codex</code>."
         },
         {
           "icone": "check",
@@ -99,18 +99,18 @@
           "detalhe": "Quando a tarefa termina, o resultado volta para o chat: texto direto, arquivo pequeno como anexo e vídeo grande como link."
         }
       ],
-      "legenda": "Clique em cada bloco. Para instalar e usar, você não precisa mexer no código: só no .env e no Telegram."
+      "legenda": "Clique em cada bloco. Para instalar e usar, você nêo precisa mexer no código: só no .env e no Telegram."
     },
     {
       "tipo": "passos",
-      "titulo": "A instalação em seis passos",
+      "titulo": "A instalaçêo em seis passos",
       "sub": "Testado no Ubuntu com Node 24. O atalho <code>./scripts/instalar.sh</code> faz a parte mecânica e para no que exige você.",
       "passos": [
         {
           "titulo": "Pré-requisitos",
           "sub": "confira antes",
           "texto": [
-            "<b>Node 22 ou mais novo</b> (<code>node -v</code>; o Ubuntu 24.04 traz o 18). <b>claude instalado e logado</b>: confira com <code>claude auth status</code>; instalado não é o mesmo que autenticado. <b>ffmpeg</b> e <b>python3</b> para as tarefas de áudio e vídeo.",
+            "<b>Node 22 ou mais novo</b> (<code>node -v</code>; o Ubuntu 24.04 traz o 18). <b>claude instalado e logado</b>: confira com <code>claude auth status</code>; instalado nêo é o mesmo que autenticado. <b>ffmpeg</b> e <b>python3</b> para as tarefas de áudio e vídeo.",
             "Sem o claude logado o bot sobe e aceita comandos, mas todo trabalho de agente falha. É a falha mais confusa, porque tudo parece certo."
           ]
         },
@@ -118,8 +118,8 @@
           "titulo": "Clonar e instalar",
           "sub": "npm ci",
           "texto": [
-            "Clone o repositório e rode <code>npm ci</code> (não <code>npm install</code>: o <code>ci</code> segue o lockfile e a instalação fica igual em toda máquina).",
-            "Clone também os repos de domínio <code>promoavatar</code> e <code>promoavatar3</code> como pastas irmãs. Sem eles o bot sobe, mas os fluxos quebram na primeira fase e dezenas de testes falham."
+            "Clone o repositório e rode <code>npm ci</code> (nêo <code>npm install</code>: o <code>ci</code> segue o lockfile e a instalaçêo fica igual em toda máquina).",
+            "Clone também os repos de domínio <code>promoavatar</code> e <code>promoavatar3</code> como pastas irmês. Sem eles o bot sobe, mas os fluxos quebram na primeira fase e dezenas de testes falham."
           ]
         },
         {
@@ -135,7 +135,7 @@
           "sub": "chmod 600",
           "texto": [
             "Copie o <code>.env.example</code>, proteja com <code>chmod 600</code> e preencha <code>BOT_TOKEN</code>, <code>QUEUE_DB</code>, <code>STATE_DIR</code> e <code>LOG_FILE</code>.",
-            "Em <code>ALLOWED_CHAT_IDS</code>, deixe <code>0</code>. É o modo pareamento: o primeiro <code>/ping</code> cadastra o seu chat como dono e fecha a porta. Vazio não é pareamento: é erro de propósito, o bot não sobe."
+            "Em <code>ALLOWED_CHAT_IDS</code>, deixe <code>0</code>. É o modo pareamento: o primeiro <code>/ping</code> cadastra o seu chat como dono e fecha a porta. Vazio nêo é pareamento: é erro de propósito, o bot nêo sobe."
           ],
           "exemplo": {
             "rot": "Cuidado",
@@ -146,7 +146,7 @@
           "titulo": "Subir e parear",
           "sub": "./start.sh",
           "texto": [
-            "Rode <code>npm test</code> e <code>npm run build</code>, depois suba na mão com <code>./start.sh</code> para ver qualquer erro na tela.",
+            "Rode <code>npm test</code> e <code>npm run build</code>, depois suba na mêo com <code>./start.sh</code> para ver qualquer erro na tela.",
             "Mande <code>/ping</code> para o seu bot. Ele responde com o id do chat e grava esse id no <code>.env</code>. A partir daí, só você é atendido."
           ]
         },
@@ -162,13 +162,13 @@
     },
     {
       "tipo": "codigo",
-      "titulo": "Os comandos da instalação",
+      "titulo": "Os comandos da instalaçêo",
       "sub": "Na ordem. Troque só o que estiver indicado.",
       "blocos": [
         {
           "rot": "Terminal · clonar, instalar, testar",
           "icone": "terminal",
-          "conteudo": "cd ~/projetos\ngit clone https://github.com/linnoff88-dev/ARCKHÉccbot.git\ngit clone https://github.com/linnoff88-dev/promoavatar.git\ngit clone https://github.com/linnoff88-dev/promoavatar3.git\ncd ARCKHÉccbot\n./scripts/instalar.sh --checar   # só diz o que falta, não muda nada\nnpm ci\nnpm test\nnpm run build"
+          "conteudo": "cd ~/projetos\ngit clone https://github.com/linnoff88-dev/ARCKHÉccbot.git\ngit clone https://github.com/linnoff88-dev/promoavatar.git\ngit clone https://github.com/linnoff88-dev/promoavatar3.git\ncd ARCKHÉccbot\n./scripts/instalar.sh --checar   # só diz o que falta, nêo muda nada\nnpm ci\nnpm test\nnpm run build"
         },
         {
           "rot": "Terminal · .env e primeira subida",
@@ -186,15 +186,15 @@
         "abas": [
           {
             "rot": "Boot saudável",
-            "html": "<p>No log aparece a linha de recuperação, mesmo numa fila vazia:</p><pre>boot: recuperação de leases — requeued=0 failed=0</pre><p>Erro de configuração derruba o processo nesse ponto, de propósito. Leia a mensagem antes de mexer em outra coisa.</p>"
+            "html": "<p>No log aparece a linha de recuperaçêo, mesmo numa fila vazia:</p><pre>boot: recuperaçêo de leases — requeued=0 failed=0</pre><p>Erro de configuraçêo derruba o processo nesse ponto, de propósito. Leia a mensagem antes de mexer em outra coisa.</p>"
           },
           {
             "rot": "Sintoma → causa",
-            "html": "<ul><li><code>config: falta BOT_TOKEN</code>: o .env não tem o token.</li><li>Serviço <i>active</i> mas <code>/ping</code> não responde: allowlist com o id errado (o log mostra <code>rejeitada — fora da allowlist</code>).</li><li>Bot responde, mas todo job falha: <code>claude</code> não está logado.</li><li><code>tsc: not found</code> no build: refaça com <code>NODE_ENV=development npm ci --include=dev</code>.</li></ul>"
+            "html": "<ul><li><code>config: falta BOT_TOKEN</code>: o .env nêo tem o token.</li><li>Serviço <i>active</i> mas <code>/ping</code> nêo responde: allowlist com o id errado (o log mostra <code>rejeitada — fora da allowlist</code>).</li><li>Bot responde, mas todo job falha: <code>claude</code> nêo está logado.</li><li><code>tsc: not found</code> no build: refaça com <code>NODE_ENV=development npm ci --include=dev</code>.</li></ul>"
           },
           {
             "rot": "Onde moram os segredos",
-            "html": "<p>O <code>.env</code> do bot guarda <b>configuração</b>: token, allowlist, caminhos. Chaves de outros serviços moram num <b>cofre</b> separado, um arquivo por máquina com <code>chmod 600</code>, nunca versionado. Regra do projeto: o .env guarda caminho e id; segredo de terceiro mora no arquivo do dono dele.</p>"
+            "html": "<p>O <code>.env</code> do bot guarda <b>configuraçêo</b>: token, allowlist, caminhos. Chaves de outros serviços moram num <b>cofre</b> separado, um arquivo por máquina com <code>chmod 600</code>, nunca versionado. Regra do projeto: o .env guarda caminho e id; segredo de terceiro mora no arquivo do dono dele.</p>"
           }
         ]
       }
@@ -202,7 +202,7 @@
     {
       "tipo": "pratica",
       "titulo": "Prática",
-      "sub": "Reserve uma hora sem interrupção.",
+      "sub": "Reserve uma hora sem interrupçêo.",
       "exercicios": [
         {
           "id": "e3",
@@ -217,13 +217,13 @@
     {
       "tipo": "quiz",
       "titulo": "Teste o que aprendeu",
-      "sub": "A explicação aparece depois da sua resposta.",
+      "sub": "A explicaçêo aparece depois da sua resposta.",
       "perguntas": [
         {
-          "p": "O serviço está <i>active (running)</i>, mas o bot não responde ao seu /ping. Qual é a causa mais provável?",
+          "p": "O serviço está <i>active (running)</i>, mas o bot nêo responde ao seu /ping. Qual é a causa mais provável?",
           "opcoes": [
             "Falta o ffmpeg.",
-            "A allowlist tem um id que não é o do seu chat.",
+            "A allowlist tem um id que nêo é o do seu chat.",
             "O modelo está lento.",
             "O banco está cheio."
           ],
@@ -253,7 +253,7 @@
             "Dentro do prompt da skill."
           ],
           "certa": 1,
-          "explica": "Segredo nunca vai em texto versionado nem em mensagem. O .env do bot guarda configuração; segredo de terceiro mora no cofre.",
+          "explica": "Segredo nunca vai em texto versionado nem em mensagem. O .env do bot guarda configuraçêo; segredo de terceiro mora no cofre.",
           "ref": "codigo"
         }
       ]
@@ -263,7 +263,7 @@
       "titulo": "Para ir além",
       "links": [
         {
-          "t": "Guia do ARCKHÉccbot (instalação e uso)",
+          "t": "Guia do ARCKHÉccbot (instalaçêo e uso)",
           "href": "https://linnoff88-dev.github.io/
           "icone": "fila"
         },

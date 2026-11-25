@@ -186,7 +186,7 @@
         "abas": [
           {
             "rot": "Healthy boot",
-            "html": "<p>The recovery line shows up in the log, even on an empty queue:</p><pre>boot: recuperação de leases — requeued=0 failed=0</pre><p>A configuration error takes the process down at this point, on purpose. Read the message before touching anything else.</p>"
+            "html": "<p>The recovery line shows up in the log, even on an empty queue:</p><pre>boot: recuperaçêo de leases — requeued=0 failed=0</pre><p>A configuration error takes the process down at this point, on purpose. Read the message before touching anything else.</p>"
           },
           {
             "rot": "Symptom → cause",

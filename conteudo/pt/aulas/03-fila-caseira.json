@@ -6,7 +6,7 @@
   "menu": "Caseira",
   "minutos": 20,
   "lead": "Antes do bot, você vê a ideia inteira num script curto do repositório jornada-agentes: quatro pastas, uma tarefa por vez, retomada depois do Ctrl+C e falha separada com o motivo.",
-  "objetivo": "rodar a fila caseira, interromper no meio e explicar por que a segunda rodada não refaz o que já foi feito.",
+  "objetivo": "rodar a fila caseira, interromper no meio e explicar por que a segunda rodada nêo refaz o que já foi feito.",
   "hero_alt": "Notebook com terminal escuro ao lado de quatro pastas de papel sobre a mesa.",
   "competencias": [
     "retomar-tarefa",
@@ -72,7 +72,7 @@
               "t": "texto original, ---, resposta"
             }
           ],
-          "detalhe": "Deu certo (código 0 e resposta não vazia): o arquivo final tem o pedido, uma linha --- e a resposta do agente."
+          "detalhe": "Deu certo (código 0 e resposta nêo vazia): o arquivo final tem o pedido, uma linha --- e a resposta do agente."
         },
         {
           "icone": "x",
@@ -98,9 +98,9 @@
     {
       "tipo": "simfila",
       "titulo": "Veja a fila funcionando",
-      "sub": "Rode, interrompa no meio com o botão de Ctrl+C e rode de novo.",
+      "sub": "Rode, interrompa no meio com o botêo de Ctrl+C e rode de novo.",
       "tarefas": [
-        "01 · Transcrever a reunião de segunda",
+        "01 · Transcrever a reuniêo de segunda",
         "02 · Resumir os 3 PDFs do cliente",
         "03 · Rascunho do post da semana",
         "04 · Explicativo de 2 min do produto",
@@ -120,11 +120,11 @@
         "inicio": "5 tarefas em entrada/. Clique em \"Rodar a fila\".",
         "rodando": "Rodando: uma tarefa por vez, de entrada/ para rodando/ e depois feito/ ou falhou/.",
         "parou": "Interrompido. A tarefa do meio ficou em rodando/. Rode de novo para ver a retomada.",
-        "retoma": "Retomada: o que estava em rodando/ voltou para entrada/. O que já estava em feito/ não é refeito.",
+        "retoma": "Retomada: o que estava em rodando/ voltou para entrada/. O que já estava em feito/ nêo é refeito.",
         "fim": "Fila vazia: tudo em feito/.",
-        "fimfalha": "Fila vazia. Uma tarefa foi para falhou/ com o motivo: é ela que você olha de manhã."
+        "fimfalha": "Fila vazia. Uma tarefa foi para falhou/ com o motivo: é ela que você olha de manhê."
       },
-      "legenda": "Simulação ilustrativa no navegador: as tarefas não rodam de verdade. A falha é proposital, para mostrar a pasta falhou/."
+      "legenda": "Simulaçêo ilustrativa no navegador: as tarefas nêo rodam de verdade. A falha é proposital, para mostrar a pasta falhou/."
     },
     {
       "tipo": "codigo",
@@ -134,12 +134,12 @@
         {
           "rot": "Terminal · preparar e rodar",
           "icone": "terminal",
-          "conteudo": "git clone https://github.com/linnoff88-dev/jornada-agentes.git\ncd jornada-agentes\nmkdir -p fila/entrada\necho \"Resuma em 5 linhas o que é uma fila de tarefas.\" > fila/entrada/01.md\necho \"Liste 3 riscos de deixar um agente rodando sozinho.\" > fila/entrada/02.md\n./ferramentas/fila-caseira.sh fila          # motor padrão: claude\n./ferramentas/fila-caseira.sh fila codex    # ou o codex"
+          "conteudo": "git clone https://github.com/linnoff88-dev/jornada-agentes.git\ncd jornada-agentes\nmkdir -p fila/entrada\necho \"Resuma em 5 linhas o que é uma fila de tarefas.\" > fila/entrada/01.md\necho \"Liste 3 riscos de deixar um agente rodando sozinho.\" > fila/entrada/02.md\n./ferramentas/fila-caseira.sh fila          # motor padrêo: claude\n./ferramentas/fila-caseira.sh fila codex    # ou o codex"
         },
         {
           "rot": "O miolo do fila-caseira.sh (resumido para leitura)",
           "icone": "arquivo",
-          "conteudo": "mkdir -p \"$PASTA/entrada\" \"$PASTA/rodando\" \"$PASTA/feito\" \"$PASTA/falhou\"\n\n# retomada: o que ficou em \"rodando\" (queda, Ctrl+C) volta para a entrada\nfor f in \"$PASTA\"/rodando/*.md; do [ -e \"$f\" ] && mv \"$f\" \"$PASTA/entrada/\"; done\n\nfor f in \"$PASTA\"/entrada/*.md; do\n  [ -e \"$f\" ] || { echo \"fila vazia\"; break; }\n  nome=$(basename \"$f\")\n  mv \"$f\" \"$PASTA/rodando/$nome\"          # pega a tarefa (só uma por vez)\n  saida=$(claude -p \"$(cat \"$PASTA/rodando/$nome\")\" < /dev/null 2>&1); rc=$?\n  if [ $rc -eq 0 ] && [ -n \"$saida\" ]; then\n    # pedido + --- + resposta vão para feito/\n  else\n    # pedido + ERRO (rc) + saída vão para falhou/\n  fi\ndone"
+          "conteudo": "mkdir -p \"$PASTA/entrada\" \"$PASTA/rodando\" \"$PASTA/feito\" \"$PASTA/falhou\"\n\n# retomada: o que ficou em \"rodando\" (queda, Ctrl+C) volta para a entrada\nfor f in \"$PASTA\"/rodando/*.md; do [ -e \"$f\" ] && mv \"$f\" \"$PASTA/entrada/\"; done\n\nfor f in \"$PASTA\"/entrada/*.md; do\n  [ -e \"$f\" ] || { echo \"fila vazia\"; break; }\n  nome=$(basename \"$f\")\n  mv \"$f\" \"$PASTA/rodando/$nome\"          # pega a tarefa (só uma por vez)\n  saida=$(claude -p \"$(cat \"$PASTA/rodando/$nome\")\" < /dev/null 2>&1); rc=$?\n  if [ $rc -eq 0 ] && [ -n \"$saida\" ]; then\n    # pedido + --- + resposta vêo para feito/\n  else\n    # pedido + ERRO (rc) + saída vêo para falhou/\n  fi\ndone"
         }
       ],
       "saida": {
@@ -151,11 +151,11 @@
           },
           {
             "rot": "Leitura linha a linha",
-            "html": "<ol><li>Cria as quatro pastas (rodar de novo não estraga nada).</li><li>Devolve para <code>entrada/</code> o que ficou em <code>rodando/</code>.</li><li>Pega um arquivo por vez e o move para <code>rodando/</code> antes de chamar o agente.</li><li>Código 0 e resposta não vazia: <code>feito/</code>. Senão: <code>falhou/</code> com o código.</li><li>No fim, conta quantos estão em cada pasta.</li></ol>"
+            "html": "<ol><li>Cria as quatro pastas (rodar de novo nêo estraga nada).</li><li>Devolve para <code>entrada/</code> o que ficou em <code>rodando/</code>.</li><li>Pega um arquivo por vez e o move para <code>rodando/</code> antes de chamar o agente.</li><li>Código 0 e resposta nêo vazia: <code>feito/</code>. Senêo: <code>falhou/</code> com o código.</li><li>No fim, conta quantos estêo em cada pasta.</li></ol>"
           },
           {
             "rot": "O que o bot faz a mais",
-            "html": "<ul><li>Recebe pedidos pelo Telegram, não só por arquivo.</li><li>Cinco filas com limites diferentes, e tentativas automáticas.</li><li>Prazo por tarefa e aviso no chat quando termina.</li><li>Portão de aprovação no meio dos fluxos.</li></ul>"
+            "html": "<ul><li>Recebe pedidos pelo Telegram, nêo só por arquivo.</li><li>Cinco filas com limites diferentes, e tentativas automáticas.</li><li>Prazo por tarefa e aviso no chat quando termina.</li><li>Portêo de aprovaçêo no meio dos fluxos.</li></ul>"
           }
         ]
       }
@@ -170,7 +170,7 @@
           "titulo": "E2 · Fila caseira em 30 linhas",
           "min": "30 min",
           "texto": "Crie duas ou três tarefas em fila/entrada e rode a fila-caseira.sh. Numa segunda rodada, interrompa com Ctrl+C enquanto uma tarefa está em rodando/, confira a pasta e rode de novo.",
-          "pronto": "as tarefas estão em fila/feito com a resposta e você viu a fila continuar de onde parou depois do Ctrl+C."
+          "pronto": "as tarefas estêo em fila/feito com a resposta e você viu a fila continuar de onde parou depois do Ctrl+C."
         }
       ],
       "fonte": "Script: <a href=\"https://github.com/linnoff88-dev/jornada-agentes/blob/main/ferramentas/fila-caseira.sh\" target=\"_blank\" rel=\"noopener\">jornada-agentes/ferramentas/fila-caseira.sh</a>."
@@ -178,7 +178,7 @@
     {
       "tipo": "quiz",
       "titulo": "Teste o que aprendeu",
-      "sub": "A explicação aparece depois da sua resposta.",
+      "sub": "A explicaçêo aparece depois da sua resposta.",
       "perguntas": [
         {
           "p": "Você interrompeu a fila no meio de uma tarefa. O que acontece quando roda de novo?",
@@ -189,7 +189,7 @@
             "A tarefa interrompida é perdida."
           ],
           "certa": 1,
-          "explica": "É o que torna a fila durável: o que ficou em rodando/ volta para entrada/, e o que já está em feito/ não é refeito.",
+          "explica": "É o que torna a fila durável: o que ficou em rodando/ volta para entrada/, e o que já está em feito/ nêo é refeito.",
           "cert": true,
           "ref": "simfila"
         },
@@ -202,7 +202,7 @@
             "Porque o agente só lê arquivos dessa pasta."
           ],
           "certa": 1,
-          "explica": "Mover antes é o registro de \"estou trabalhando nisso\". É a versão caseira do lease do ARCKHÉccbot.",
+          "explica": "Mover antes é o registro de \"estou trabalhando nisso\". É a versêo caseira do lease do ARCKHÉccbot.",
           "ref": "diagrama"
         },
         {
@@ -211,10 +211,10 @@
             "Fica em rodando/.",
             "Volta para entrada/.",
             "falhou/, porque resposta vazia também conta como falha.",
-            "feito/, porque não houve erro."
+            "feito/, porque nêo houve erro."
           ],
           "certa": 2,
-          "explica": "O script exige código 0 E resposta não vazia. Sem resposta não há o que conferir, então é falha.",
+          "explica": "O script exige código 0 E resposta nêo vazia. Sem resposta nêo há o que conferir, entêo é falha.",
           "ref": "codigo"
         }
       ]
@@ -229,7 +229,7 @@
           "icone": "git"
         },
         {
-          "t": "Guia da formação com os 23 exercícios",
+          "t": "Guia da formaçêo com os 23 exercícios",
           "href": "https://linnoff88-dev.github.io/
           "icone": "lista"
         }

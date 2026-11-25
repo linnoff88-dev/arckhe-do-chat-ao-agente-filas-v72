@@ -5,9 +5,9 @@
   "titulo_curto": "O que vai para a fila",
   "menu": "O que vai",
   "minutos": 15,
-  "lead": "Nem toda tarefa deve ir para a fila. Antes de instalar qualquer coisa, você passa a sua lista por três perguntas e sai com uma tabela: roda sozinha, roda com portão ou fica com você.",
-  "objetivo": "classificar dez tarefas suas em sozinha, com portão ou fica com você, e dizer onde fica cada portão.",
-  "hero_alt": "Mãos separando cartões de papel em três pilhas sobre a mesa.",
+  "lead": "Nem toda tarefa deve ir para a fila. Antes de instalar qualquer coisa, você passa a sua lista por três perguntas e sai com uma tabela: roda sozinha, roda com portêo ou fica com você.",
+  "objetivo": "classificar dez tarefas suas em sozinha, com portêo ou fica com você, e dizer onde fica cada portêo.",
+  "hero_alt": "Mêos separando cartões de papel em três pilhas sobre a mesa.",
   "competencias": [
     "desenhar-fila",
     "classificar-tarefa",
@@ -20,11 +20,11 @@
     },
     {
       "icone": "portao",
-      "t": "Onde o portão faz sentido"
+      "t": "Onde o portêo faz sentido"
     },
     {
       "icone": "usuario",
-      "t": "O que não deve ir para a fila"
+      "t": "O que nêo deve ir para a fila"
     },
     {
       "icone": "lista",
@@ -44,7 +44,7 @@
           "itens": [
             {
               "icone": "arquivo",
-              "t": "Transcrever reunião"
+              "t": "Transcrever reuniêo"
             },
             {
               "icone": "arquivo",
@@ -78,13 +78,13 @@
               "sub": "publicar, enviar, gastar"
             }
           ],
-          "detalhe": "Entrada clara e resultado conferível: vai para a fila. Se, além disso, o resultado sai para o mundo (publica, envia, gasta crédito), ganha um portão antes desse passo.",
+          "detalhe": "Entrada clara e resultado conferível: vai para a fila. Se, além disso, o resultado sai para o mundo (publica, envia, gasta crédito), ganha um portêo antes desse passo.",
           "forte": true
         },
         {
           "icone": "fila",
           "titulo": "Fila sozinha",
-          "sub": "Sem portão",
+          "sub": "Sem portêo",
           "itens": [
             {
               "icone": "check",
@@ -95,7 +95,7 @@
         },
         {
           "icone": "portao",
-          "titulo": "Fila com portão",
+          "titulo": "Fila com portêo",
           "sub": "Para antes do que importa",
           "itens": [
             {
@@ -103,7 +103,7 @@
               "t": "Post, vídeo, campanha"
             }
           ],
-          "detalhe": "O agente faz a parte pesada e para. Você lê, corrige e aprova. Só então segue para publicar ou gastar."
+          "detalhe": "O agente faz a parte pesada e para. Você lê, corrige e aprova. Só entêo segue para publicar ou gastar."
         },
         {
           "icone": "usuario",
@@ -112,13 +112,13 @@
           "itens": [
             {
               "icone": "x",
-              "t": "Entrada vaga ou decisão delicada"
+              "t": "Entrada vaga ou decisêo delicada"
             }
           ],
-          "detalhe": "Pedido que precisa de conversa (\"melhora isso aqui\"), decisão de negócio ou ação irreversível sem como revisar. Volta para a fila quando você souber descrever a entrada e o resultado."
+          "detalhe": "Pedido que precisa de conversa (\"melhora isso aqui\"), decisêo de negócio ou açêo irreversível sem como revisar. Volta para a fila quando você souber descrever a entrada e o resultado."
         }
       ],
-      "legenda": "Clique em cada bloco. A pergunta que mais muda o destino é a terceira: consequência fora pede portão."
+      "legenda": "Clique em cada bloco. A pergunta que mais muda o destino é a terceira: consequência fora pede portêo."
     },
     {
       "tipo": "passos",
@@ -129,39 +129,39 @@
           "titulo": "A entrada é clara?",
           "sub": "pergunta 1",
           "texto": [
-            "A fila não conversa com você no meio. A tarefa precisa caber numa linha: um link, um caminho de arquivo ou um assunto.",
+            "A fila nêo conversa com você no meio. A tarefa precisa caber numa linha: um link, um caminho de arquivo ou um assunto.",
             "As skills do ARCKHÉccbot mostram o formato: <code>transcrever: https://…</code>, <code>explicativo: &lt;assunto&gt; | vertical</code>, <code>imagem: uma raposa ruiva na neve | ratio=16:9</code>."
           ],
           "exemplo": {
             "rot": "Vaga demais",
-            "texto": "\"Dá uma melhorada na apresentação.\" Melhorar o quê, até onde? Fica com você ou vira uma entrada concreta."
+            "texto": "\"Dá uma melhorada na apresentaçêo.\" Melhorar o quê, até onde? Fica com você ou vira uma entrada concreta."
           }
         },
         {
           "titulo": "Dá para conferir o resultado?",
           "sub": "pergunta 2",
           "texto": [
-            "De manhã você vai olhar o resultado. Se ele é um arquivo (texto, vídeo, imagem), você confere em minutos. Se é \"fiz várias coisas\", não tem como saber se saiu certo.",
-            "No bot, isso é contrato: o agente termina com <code>RESULT: &lt;caminho&gt;</code>, e o bot confere se o arquivo existe e tem a extensão esperada."
+            "De manhê você vai olhar o resultado. Se ele é um arquivo (texto, vídeo, imagem), você confere em minutos. Se é \"fiz várias coisas\", nêo tem como saber se saiu certo.",
+            "No bot, isso é contrato: o agente termina com <code>RESULT: &lt;caminho&gt;</code>, e o bot confere se o arquivo existe e tem a extensêo esperada."
           ]
         },
         {
           "titulo": "Tem consequência fora?",
           "sub": "pergunta 3",
           "texto": [
-            "Publicar em nome da empresa, enviar para cliente, gastar crédito pago: aqui entra o portão. O agente prepara e para; você aprova.",
-            "Transcrever uma reunião para você mesmo ler não tem consequência fora. Roda sozinha."
+            "Publicar em nome da empresa, enviar para cliente, gastar crédito pago: aqui entra o portêo. O agente prepara e para; você aprova.",
+            "Transcrever uma reuniêo para você mesmo ler nêo tem consequência fora. Roda sozinha."
           ],
           "exemplo": {
             "rot": "No ARCKHÉccbot",
-            "texto": "O /promoavatar escreve os textos de cada público e para. Só depois da sua aprovação ele segue para o vídeo e o reel."
+            "texto": "O /promoavatar escreve os textos de cada público e para. Só depois da sua aprovaçêo ele segue para o vídeo e o reel."
           }
         },
         {
           "titulo": "Refazer do zero é aceitável?",
           "sub": "bônus",
           "texto": [
-            "Esta pergunta não muda se vai para a fila; muda o tipo. Se refazer do zero é barato, basta uma <b>skill</b> (uma etapa). Se há trabalho parcial que seria absurdo jogar fora, o certo é um <b>fluxo</b> (várias fases, com estado e retomada).",
+            "Esta pergunta nêo muda se vai para a fila; muda o tipo. Se refazer do zero é barato, basta uma <b>skill</b> (uma etapa). Se há trabalho parcial que seria absurdo jogar fora, o certo é um <b>fluxo</b> (várias fases, com estado e retomada).",
             "Você vai usar as duas nas aulas 5 e 6."
           ]
         }
@@ -175,24 +175,24 @@
         {
           "rot": "fila-no-papel.md",
           "icone": "arquivo",
-          "conteudo": "| # | Tarefa | Entrada (1 linha) | Resultado conferível | Destino | Onde fica o portão |\n|---|---|---|---|---|---|\n| 1 | Transcrever a reunião de segunda | link da gravação | texto .txt | fila sozinha | — |\n| 2 | Post da semana | assunto | texto do post | fila com portão | antes de publicar |\n| 3 |  |  |  |  |  |\n| 4 |  |  |  |  |  |\n| 5 |  |  |  |  |  |\n| 6 |  |  |  |  |  |\n| 7 |  |  |  |  |  |\n| 8 |  |  |  |  |  |\n| 9 |  |  |  |  |  |\n| 10 |  |  |  |  |  |"
+          "conteudo": "| # | Tarefa | Entrada (1 linha) | Resultado conferível | Destino | Onde fica o portêo |\n|---|---|---|---|---|---|\n| 1 | Transcrever a reuniêo de segunda | link da gravaçêo | texto .txt | fila sozinha | — |\n| 2 | Post da semana | assunto | texto do post | fila com portêo | antes de publicar |\n| 3 |  |  |  |  |  |\n| 4 |  |  |  |  |  |\n| 5 |  |  |  |  |  |\n| 6 |  |  |  |  |  |\n| 7 |  |  |  |  |  |\n| 8 |  |  |  |  |  |\n| 9 |  |  |  |  |  |\n| 10 |  |  |  |  |  |"
         },
         {
           "rot": "Pedido para o seu agente revisar a tabela",
           "icone": "chat",
-          "conteudo": "Leia o arquivo fila-no-papel.md. Para cada linha, confira:\n1. A entrada cabe numa linha (link, arquivo ou assunto)?\n2. O resultado é um arquivo ou texto que dá para conferir?\n3. Há consequência fora (publicar, enviar, gastar)? Se sim, tem portão marcado?\nAponte as linhas que deveriam mudar de destino e diga por quê. Não altere o arquivo."
+          "conteudo": "Leia o arquivo fila-no-papel.md. Para cada linha, confira:\n1. A entrada cabe numa linha (link, arquivo ou assunto)?\n2. O resultado é um arquivo ou texto que dá para conferir?\n3. Há consequência fora (publicar, enviar, gastar)? Se sim, tem portêo marcado?\nAponte as linhas que deveriam mudar de destino e diga por quê. Nêo altere o arquivo."
         }
       ],
       "saida": {
         "selo": "simulacao",
         "abas": [
           {
-            "rot": "Exemplo de revisão",
-            "html": "<ul><li><b>Linha 4</b> (\"organizar a agenda\"): entrada vaga. Sugiro \"fica com você\" ou reescrever como \"listar conflitos da agenda desta semana\".</li><li><b>Linha 7</b> (\"responder e-mails de clientes\"): consequência fora sem portão. Sugiro \"fila com portão\": o agente rascunha, você envia.</li><li>As demais estão coerentes.</li></ul>"
+            "rot": "Exemplo de revisêo",
+            "html": "<ul><li><b>Linha 4</b> (\"organizar a agenda\"): entrada vaga. Sugiro \"fica com você\" ou reescrever como \"listar conflitos da agenda desta semana\".</li><li><b>Linha 7</b> (\"responder e-mails de clientes\"): consequência fora sem portêo. Sugiro \"fila com portêo\": o agente rascunha, você envia.</li><li>As demais estêo coerentes.</li></ul>"
           },
           {
             "rot": "Sinais de alerta",
-            "html": "<ul><li>Nenhum portão em dez linhas: confira se nada é publicado ou enviado.</li><li>Todas com portão: você vai passar a manhã aprovando; veja o que é só uso interno.</li><li>Resultado \"vários arquivos\" ou \"melhorar\": difícil de conferir.</li></ul>"
+            "html": "<ul><li>Nenhum portêo em dez linhas: confira se nada é publicado ou enviado.</li><li>Todas com portêo: você vai passar a manhê aprovando; veja o que é só uso interno.</li><li>Resultado \"vários arquivos\" ou \"melhorar\": difícil de conferir.</li></ul>"
           }
         ]
       }
@@ -200,14 +200,14 @@
     {
       "tipo": "pratica",
       "titulo": "Prática",
-      "sub": "Pré-requisito: degraus 1 e 2 da formação.",
+      "sub": "Pré-requisito: degraus 1 e 2 da formaçêo.",
       "exercicios": [
         {
           "id": "e1",
           "titulo": "E1 · A fila no papel",
           "min": "15 min",
-          "texto": "Preencha a tabela com dez tarefas repetitivas do seu trabalho. Para cada uma: entrada em uma linha, resultado conferível, destino e onde fica o portão. Peça ao seu agente para revisar com o modelo acima.",
-          "pronto": "as 10 linhas estão preenchidas e pelo menos duas têm portão."
+          "texto": "Preencha a tabela com dez tarefas repetitivas do seu trabalho. Para cada uma: entrada em uma linha, resultado conferível, destino e onde fica o portêo. Peça ao seu agente para revisar com o modelo acima.",
+          "pronto": "as 10 linhas estêo preenchidas e pelo menos duas têm portêo."
         }
       ],
       "fonte": "Exercício original: <a href=\"https://github.com/linnoff88-dev/jornada-agentes/blob/main/exercicios/03-filas.md\" target=\"_blank\" rel=\"noopener\">jornada-agentes/exercicios/03-filas.md</a> (E1)."
@@ -215,39 +215,39 @@
     {
       "tipo": "quiz",
       "titulo": "Teste o que aprendeu",
-      "sub": "A explicação aparece depois da sua resposta.",
+      "sub": "A explicaçêo aparece depois da sua resposta.",
       "perguntas": [
         {
-          "p": "Em qual tarefa o portão humano é mais importante?",
+          "p": "Em qual tarefa o portêo humano é mais importante?",
           "opcoes": [
             "Resumir PDFs para você mesmo ler.",
             "Publicar um post em nome da empresa.",
-            "Transcrever uma reunião interna.",
+            "Transcrever uma reuniêo interna.",
             "Listar os arquivos de uma pasta."
           ],
           "certa": 1,
-          "explica": "Portão vai antes do que tem consequência fora: publicar, enviar, gastar. Uso interno com erro barato pode rodar sozinho.",
+          "explica": "Portêo vai antes do que tem consequência fora: publicar, enviar, gastar. Uso interno com erro barato pode rodar sozinho.",
           "cert": true,
           "ref": "diagrama"
         },
         {
-          "p": "\"Dá uma melhorada na apresentação\" deve ir para a fila?",
+          "p": "\"Dá uma melhorada na apresentaçêo\" deve ir para a fila?",
           "opcoes": [
-            "Sim, sem portão.",
-            "Sim, com portão.",
+            "Sim, sem portêo.",
+            "Sim, com portêo.",
             "Sim, desde que use o modelo mais caro.",
-            "Ainda não: a entrada é vaga. Ou fica com você, ou vira um pedido concreto."
+            "Ainda nêo: a entrada é vaga. Ou fica com você, ou vira um pedido concreto."
           ],
           "certa": 3,
-          "explica": "A fila não conversa com você no meio da noite. Sem entrada clara, não há como conferir se o resultado saiu certo.",
+          "explica": "A fila nêo conversa com você no meio da noite. Sem entrada clara, nêo há como conferir se o resultado saiu certo.",
           "ref": "passos"
         },
         {
-          "p": "Uma tarefa tem várias etapas e a do meio é cara. Se a última etapa falhar, você não quer refazer tudo. Qual tipo usar?",
+          "p": "Uma tarefa tem várias etapas e a do meio é cara. Se a última etapa falhar, você nêo quer refazer tudo. Qual tipo usar?",
           "opcoes": [
             "Duas filas separadas.",
             "Um fluxo, que guarda o estado de cada fase e retoma da que falhou.",
-            "Nenhum: tarefas caras não vão para a fila.",
+            "Nenhum: tarefas caras nêo vêo para a fila.",
             "Uma skill, porque é mais simples."
           ],
           "certa": 1,

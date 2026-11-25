@@ -186,7 +186,7 @@
         "abas": [
           {
             "rot": "Arranque saludable",
-            "html": "<p>En el log aparece la línea de recuperación, incluso con una cola vacía:</p><pre>boot: recuperação de leases — requeued=0 failed=0</pre><p>Un error de configuración detiene el proceso en este punto, a propósito. Lee el mensaje antes de tocar cualquier otra cosa.</p>"
+            "html": "<p>En el log aparece la línea de recuperación, incluso con una cola vacía:</p><pre>boot: recuperaçêo de leases — requeued=0 failed=0</pre><p>Un error de configuración detiene el proceso en este punto, a propósito. Lee el mensaje antes de tocar cualquier otra cosa.</p>"
           },
           {
             "rot": "Síntoma → causa",

@@ -3,11 +3,11 @@
   "num": 7,
   "titulo": "O dia seguinte: conferir, medir e criar a regra nova",
   "titulo_curto": "O dia seguinte",
-  "menu": "Manhã",
+  "menu": "Manhê",
   "minutos": 18,
-  "lead": "A noite de fila só vale se a manhã for curta. Você lê o relatório no chat, confere cada resultado contra o que esperava, anota quantas saíram certas na primeira e transforma a tarefa que mais falhou numa regra nova.",
+  "lead": "A noite de fila só vale se a manhê for curta. Você lê o relatório no chat, confere cada resultado contra o que esperava, anota quantas saíram certas na primeira e transforma a tarefa que mais falhou numa regra nova.",
   "objetivo": "conferir o lote da noite, medir o acerto na primeira tentativa e escrever uma regra para a tarefa que mais falhou.",
-  "hero_alt": "Manhã com luz natural, xícara de café e notebook com uma lista de resultados.",
+  "hero_alt": "Manhê com luz natural, xícara de café e notebook com uma lista de resultados.",
   "competencias": [
     "avaliar-resultado-lote",
     "medir-acerto",
@@ -16,7 +16,7 @@
   "aprende": [
     {
       "icone": "lupa",
-      "t": "Onde olhar de manhã: chat, /status e /jobs"
+      "t": "Onde olhar de manhê: chat, /status e /jobs"
     },
     {
       "icone": "grafico",
@@ -34,7 +34,7 @@
   "secoes": [
     {
       "tipo": "diagrama",
-      "titulo": "O ciclo da manhã",
+      "titulo": "O ciclo da manhê",
       "sub": "Quinze minutos que melhoram a próxima noite.",
       "nos": [
         {
@@ -75,7 +75,7 @@
               "t": "ex.: 7 de 10"
             }
           ],
-          "detalhe": "Conte quantas saíram certas sem você mexer. Esse número, anotado toda manhã, mostra se a fila está melhorando ou só rodando.",
+          "detalhe": "Conte quantas saíram certas sem você mexer. Esse número, anotado toda manhê, mostra se a fila está melhorando ou só rodando.",
           "forte": true
         },
         {
@@ -92,7 +92,7 @@
         }
       ],
       "volta": "A próxima noite já roda com a regra nova",
-      "legenda": "Clique em cada bloco. Corrigir na mão resolve hoje; a regra nova resolve as próximas noites.",
+      "legenda": "Clique em cada bloco. Corrigir na mêo resolve hoje; a regra nova resolve as próximas noites.",
       "rolagem": true,
       "rolagem_fim": {
         "titulo": "Gerenciar é isto",
@@ -101,7 +101,7 @@
     },
     {
       "tipo": "passos",
-      "titulo": "A manhã, passo a passo",
+      "titulo": "A manhê, passo a passo",
       "passos": [
         {
           "titulo": "Ler o relatório",
@@ -116,45 +116,45 @@
           "sub": "5 a 10 min",
           "texto": [
             "Abra o arquivo ou o texto e compare com o que você esperava. Marque: certa na primeira, certa com ajuste, errada ou falhou.",
-            "Não corrija ainda. Primeiro olhe o lote inteiro: o padrão dos erros aparece quando você vê todos juntos."
+            "Nêo corrija ainda. Primeiro olhe o lote inteiro: o padrêo dos erros aparece quando você vê todos juntos."
           ]
         },
         {
           "titulo": "Tratar as falhas",
           "sub": "o motivo primeiro",
           "texto": [
-            "Leia o motivo. <code>código 143</code> foi reinício, não erro do agente: <code>/refazer</code>. Erro de entrada (link quebrado, arquivo errado): corrija a entrada e mande de novo.",
-            "Se o agente entendeu errado, não basta refazer igual: é caso para regra nova."
+            "Leia o motivo. <code>código 143</code> foi reinício, nêo erro do agente: <code>/refazer</code>. Erro de entrada (link quebrado, arquivo errado): corrija a entrada e mande de novo.",
+            "Se o agente entendeu errado, nêo basta refazer igual: é caso para regra nova."
           ]
         },
         {
           "titulo": "Escrever a regra",
           "sub": "uma linha",
           "texto": [
-            "Uma regra boa é curta, concreta e testável: diz o que fazer, não só o que evitar. Ela vai no AGENTS.md do projeto (degrau 1) ou no prompt da skill.",
-            "Rode a mesma tarefa de novo com a regra e compare. Se melhorou, a regra fica; se não, reescreva."
+            "Uma regra boa é curta, concreta e testável: diz o que fazer, nêo só o que evitar. Ela vai no AGENTS.md do projeto (degrau 1) ou no prompt da skill.",
+            "Rode a mesma tarefa de novo com a regra e compare. Se melhorou, a regra fica; se nêo, reescreva."
           ],
           "exemplo": {
             "rot": "Exemplo",
-            "texto": "Resumos de reunião: começar pelas decisões tomadas e pelos responsáveis, em no máximo 8 linhas."
+            "texto": "Resumos de reuniêo: começar pelas decisões tomadas e pelos responsáveis, em no máximo 8 linhas."
           }
         }
       ]
     },
     {
       "tipo": "codigo",
-      "titulo": "A planilha da manhã e o pedido da regra",
-      "sub": "Uma linha por tarefa. Guarde as manhãs no mesmo arquivo para ver a evolução.",
+      "titulo": "A planilha da manhê e o pedido da regra",
+      "sub": "Uma linha por tarefa. Guarde as manhês no mesmo arquivo para ver a evoluçêo.",
       "blocos": [
         {
           "rot": "conferencia.md",
           "icone": "arquivo",
-          "conteudo": "## Manhã de AAAA-MM-DD\n\n| # | Tarefa | Resultado | Certa na 1ª? | O que errou | Ação |\n|---|---|---|---|---|---|\n| 1 | Transcrever reunião de segunda | texto | sim | — | — |\n| 2 | Explicativo da fila | vídeo | não | ficou longo demais | regra nova |\n| 3 |  |  |  |  |  |\n\nCertas na primeira: __ de __\nTarefa que mais falhou: __\nRegra nova: __"
+          "conteudo": "## Manhê de AAAA-MM-DD\n\n| # | Tarefa | Resultado | Certa na 1ª? | O que errou | Açêo |\n|---|---|---|---|---|---|\n| 1 | Transcrever reuniêo de segunda | texto | sim | — | — |\n| 2 | Explicativo da fila | vídeo | nêo | ficou longo demais | regra nova |\n| 3 |  |  |  |  |  |\n\nCertas na primeira: __ de __\nTarefa que mais falhou: __\nRegra nova: __"
         },
         {
           "rot": "Pedido para o seu agente propor a regra",
           "icone": "chat",
-          "conteudo": "Leia conferencia.md. Para a tarefa que mais falhou:\n1. Descreva o erro em uma frase, com um exemplo do resultado.\n2. Proponha UMA regra de uma linha, concreta e testável, para o AGENTS.md ou para o prompt da skill.\n3. Diga como eu confiro amanhã se a regra funcionou.\nNão altere nenhum arquivo; só proponha."
+          "conteudo": "Leia conferencia.md. Para a tarefa que mais falhou:\n1. Descreva o erro em uma frase, com um exemplo do resultado.\n2. Proponha UMA regra de uma linha, concreta e testável, para o AGENTS.md ou para o prompt da skill.\n3. Diga como eu confiro amanhê se a regra funcionou.\nNêo altere nenhum arquivo; só proponha."
         },
         {
           "rot": "Telegram · ver o que terminou e liberar espaço",
@@ -166,12 +166,12 @@
         "selo": "simulacao",
         "abas": [
           {
-            "rot": "Exemplo de manhã",
-            "html": "<p><b>Certas na primeira: 7 de 10.</b> Duas certas com ajuste (resumos longos demais) e uma falha por link quebrado.</p><p><b>Regra nova:</b> \"Resumos de reunião: decisões e responsáveis primeiro, no máximo 8 linhas.\"</p><p>Na noite seguinte: 9 de 10.</p>"
+            "rot": "Exemplo de manhê",
+            "html": "<p><b>Certas na primeira: 7 de 10.</b> Duas certas com ajuste (resumos longos demais) e uma falha por link quebrado.</p><p><b>Regra nova:</b> \"Resumos de reuniêo: decisões e responsáveis primeiro, no máximo 8 linhas.\"</p><p>Na noite seguinte: 9 de 10.</p>"
           },
           {
-            "rot": "Erros comuns de manhã",
-            "html": "<ul><li>Corrigir na mão e não anotar: a mesma falha volta amanhã.</li><li>Medir só o que falhou: o que importa é a proporção certa na primeira.</li><li>Escrever regra vaga (\"seja melhor\"): não dá para conferir.</li><li>Reiniciar o bot com tarefa ainda rodando para \"limpar\".</li></ul>"
+            "rot": "Erros comuns de manhê",
+            "html": "<ul><li>Corrigir na mêo e nêo anotar: a mesma falha volta amanhê.</li><li>Medir só o que falhou: o que importa é a proporçêo certa na primeira.</li><li>Escrever regra vaga (\"seja melhor\"): nêo dá para conferir.</li><li>Reiniciar o bot com tarefa ainda rodando para \"limpar\".</li></ul>"
           }
         ]
       }
@@ -179,11 +179,11 @@
     {
       "tipo": "pratica",
       "titulo": "Prática",
-      "sub": "Na manhã depois do E4.",
+      "sub": "Na manhê depois do E4.",
       "exercicios": [
         {
           "id": "e6",
-          "titulo": "E6 · A conferência da manhã",
+          "titulo": "E6 · A conferência da manhê",
           "min": "20 min",
           "texto": "Preencha o conferencia.md com cada tarefa da noite: resultado, se saiu certa na primeira e o que errou. Trate as falhas pelo motivo.",
           "pronto": "cada tarefa do lote tem uma linha e você anotou quantas saíram certas na primeira."
@@ -254,28 +254,28 @@
           "texto": "Fila durável: o pedido fica em disco, roda um por vez, retoma depois de uma queda e separa feito de falhou."
         },
         {
-          "t": "Portão antes do que importa",
-          "texto": "Depois do que precisa do seu olho e antes do que é caro ou público. Ler, corrigir e só então aprovar."
+          "t": "Portêo antes do que importa",
+          "texto": "Depois do que precisa do seu olho e antes do que é caro ou público. Ler, corrigir e só entêo aprovar."
         },
         {
-          "t": "A manhã melhora a noite",
+          "t": "A manhê melhora a noite",
           "texto": "Conferir, medir as certas na primeira e transformar a falha que mais se repete numa regra nova."
         }
       ]
     },
     {
       "tipo": "video",
-      "titulo": "A formação inteira em vídeo",
+      "titulo": "A formaçêo inteira em vídeo",
       "sub": "Onde o degrau 3 entra entre o terminal, o seu Jarvis e as redes no automático.",
       "chave": "jornada-ia"
     },
     {
       "tipo": "quiz",
       "titulo": "Teste o que aprendeu",
-      "sub": "A explicação aparece depois da sua resposta.",
+      "sub": "A explicaçêo aparece depois da sua resposta.",
       "perguntas": [
         {
-          "p": "Qual número você deve anotar toda manhã?",
+          "p": "Qual número você deve anotar toda manhê?",
           "opcoes": [
             "Quantas tarefas foram mandadas.",
             "Quantas mensagens o bot mandou.",
@@ -283,7 +283,7 @@
             "Quantas saíram certas na primeira tentativa, do total."
           ],
           "certa": 3,
-          "explica": "A proporção de certas na primeira mostra se a fila está melhorando. Mandar mais tarefas não diz nada sobre a qualidade.",
+          "explica": "A proporçêo de certas na primeira mostra se a fila está melhorando. Mandar mais tarefas nêo diz nada sobre a qualidade.",
           "cert": true,
           "ref": "diagrama"
         },
@@ -293,22 +293,22 @@
             "Escrever uma regra concreta no prompt da skill ou no AGENTS.md e comparar na próxima noite.",
             "Trocar de modelo sem mudar nada.",
             "Tirar essa tarefa da fila para sempre.",
-            "Encurtar na mão toda manhã."
+            "Encurtar na mêo toda manhê."
           ],
           "certa": 0,
-          "explica": "Corrigir na mão resolve hoje. A regra nova resolve as próximas noites e pode ser conferida.",
+          "explica": "Corrigir na mêo resolve hoje. A regra nova resolve as próximas noites e pode ser conferida.",
           "ref": "passos"
         },
         {
           "p": "Uma tarefa falhou com <code>código 143</code>. O que entra na sua conferência?",
           "opcoes": [
             "Regra nova para o agente.",
-            "Falha de reinício: /refazer e não reiniciar com lote rodando.",
+            "Falha de reinício: /refazer e nêo reiniciar com lote rodando.",
             "Apagar a tarefa.",
             "Trocar o prompt da skill."
           ],
           "certa": 1,
-          "explica": "143 é desligamento do serviço, não erro do agente. Regra para o agente não resolveria; o cuidado é com o reinício.",
+          "explica": "143 é desligamento do serviço, nêo erro do agente. Regra para o agente nêo resolveria; o cuidado é com o reinício.",
           "ref": "passos"
         }
       ]
@@ -318,12 +318,12 @@
       "titulo": "Próximos passos",
       "links": [
         {
-          "t": "Voltar à visão geral: Do chat ao agente",
+          "t": "Voltar à visêo geral: Do chat ao agente",
           "href": "https://linnoff88-dev.github.io/
           "icone": "voltar"
         },
         {
-          "t": "Área da formação no eventos",
+          "t": "Área da formaçêo no eventos",
           "href": "https://eventos.ARCKHÉ.pro/do-chat-ao-agente/",
           "icone": "camadas"
         },

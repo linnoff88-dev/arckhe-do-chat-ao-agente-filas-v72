@@ -175,7 +175,7 @@
         {
           "rot": "fila-no-papel.md",
           "icone": "arquivo",
-          "conteudo": "| # | Tarefa | Entrada (1 linha) | Resultado conferível | Destino | Onde fica o portão |\n|---|---|---|---|---|---|\n| 1 | Transcrever a reunião de segunda | link da gravação | texto .txt | fila sozinha | — |\n| 2 | Post da semana | assunto | texto do post | fila com portão | antes de publicar |\n| 3 |  |  |  |  |  |\n| 4 |  |  |  |  |  |\n| 5 |  |  |  |  |  |\n| 6 |  |  |  |  |  |\n| 7 |  |  |  |  |  |\n| 8 |  |  |  |  |  |\n| 9 |  |  |  |  |  |\n| 10 |  |  |  |  |  |"
+          "conteudo": "| # | Tarefa | Entrada (1 linha) | Resultado conferível | Destino | Onde fica o portêo |\n|---|---|---|---|---|---|\n| 1 | Transcrever a reuniêo de segunda | link da gravaçêo | texto .txt | fila sozinha | — |\n| 2 | Post da semana | assunto | texto do post | fila com portêo | antes de publicar |\n| 3 |  |  |  |  |  |\n| 4 |  |  |  |  |  |\n| 5 |  |  |  |  |  |\n| 6 |  |  |  |  |  |\n| 7 |  |  |  |  |  |\n| 8 |  |  |  |  |  |\n| 9 |  |  |  |  |  |\n| 10 |  |  |  |  |  |"
         },
         {
           "rot": "Pedido para que tu agente revise la tabla",
@@ -188,7 +188,7 @@
         "abas": [
           {
             "rot": "Ejemplo de revisión",
-            "html": "<ul><li><b>Línea 4</b> (\"organizar a agenda\"): entrada vaga. Sugiero \"fica com você\" o reescribirla como \"listar conflitos da agenda desta semana\".</li><li><b>Línea 7</b> (\"responder e-mails de clientes\"): consecuencia externa sin compuerta. Sugiero \"fila com portão\": el agente redacta un borrador y tú lo envías.</li><li>Las demás son coherentes.</li></ul>"
+            "html": "<ul><li><b>Línea 4</b> (\"organizar a agenda\"): entrada vaga. Sugiero \"fica com você\" o reescribirla como \"listar conflitos da agenda desta semana\".</li><li><b>Línea 7</b> (\"responder e-mails de clientes\"): consecuencia externa sin compuerta. Sugiero \"fila com portêo\": el agente redacta un borrador y tú lo envías.</li><li>Las demás son coherentes.</li></ul>"
           },
           {
             "rot": "Señales de alerta",

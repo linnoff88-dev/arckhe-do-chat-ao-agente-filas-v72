@@ -7,7 +7,7 @@
   "minutos": 18,
   "lead": "Com o bot no ar, a sua fila no papel vira mensagens. Cada linha é uma skill com uma entrada; o bot põe cada pedido na fila certa, roda dentro do limite de cada uma e avisa no chat quando termina.",
   "objetivo": "mandar de 5 a 10 tarefas no formato de skill e acompanhar o lote pelo /fila e pelo /jobs.",
-  "hero_alt": "Mão segurando um celular com mensagens enviadas em sequência, monitor desfocado ao fundo.",
+  "hero_alt": "Mêo segurando um celular com mensagens enviadas em sequência, monitor desfocado ao fundo.",
   "competencias": [
     "enviar-lote",
     "acompanhar-fila",
@@ -28,7 +28,7 @@
     },
     {
       "icone": "relogio",
-      "t": "O que não fazer com o lote rodando"
+      "t": "O que nêo fazer com o lote rodando"
     }
   ],
   "secoes": [
@@ -47,7 +47,7 @@
               "t": "transcrever: https://…"
             }
           ],
-          "detalhe": "Uma linha por tarefa. O nome antes dos dois-pontos é a skill; depois vem a entrada; campos opcionais vão depois de uma barra vertical."
+          "detalhe": "Uma linha por tarefa. O nome antes dos dois-pontos é a skill; depois vem a entrada; campos opcionais vêo depois de uma barra vertical."
         },
         {
           "icone": "lista",
@@ -88,7 +88,7 @@
               "t": "termina com RESULT: ou ERRO:"
             }
           ],
-          "detalhe": "O trabalhador monta o prompt da skill com a sua entrada e chama o agente. Ele trabalha sozinho, sem pedir confirmação, e termina com RESULT ou ERRO."
+          "detalhe": "O trabalhador monta o prompt da skill com a sua entrada e chama o agente. Ele trabalha sozinho, sem pedir confirmaçêo, e termina com RESULT ou ERRO."
         },
         {
           "icone": "megafone",
@@ -100,10 +100,10 @@
               "t": "resultado ou motivo"
             }
           ],
-          "detalhe": "Ao terminar, o bot avisa no chat com o resultado ou com o motivo da falha. De manhã, a conversa é o seu relatório."
+          "detalhe": "Ao terminar, o bot avisa no chat com o resultado ou com o motivo da falha. De manhê, a conversa é o seu relatório."
         }
       ],
-      "legenda": "Clique em cada bloco. Os números de fila e de limite vêm da documentação do ARCKHÉccbot.",
+      "legenda": "Clique em cada bloco. Os números de fila e de limite vêm da documentaçêo do ARCKHÉccbot.",
       "rolagem": true,
       "rolagem_fim": {
         "titulo": "Dez mensagens, uma noite",
@@ -119,7 +119,7 @@
           "sub": "skill: entrada",
           "texto": [
             "<code>&lt;skill&gt;: &lt;entrada&gt; [| campo]</code>. A entrada é o que você colocou na coluna \"Entrada\" da sua fila no papel.",
-            "<code>/skills</code> lista as skills instaladas e <code>/ajuda &lt;skill&gt;</code> mostra os campos de cada uma. Campo escrito sem a barra é recusado, não vira parte da entrada em silêncio."
+            "<code>/skills</code> lista as skills instaladas e <code>/ajuda &lt;skill&gt;</code> mostra os campos de cada uma. Campo escrito sem a barra é recusado, nêo vira parte da entrada em silêncio."
           ],
           "exemplo": {
             "rot": "Exemplo",
@@ -131,7 +131,7 @@
           "sub": "modelo, esforço, motor",
           "texto": [
             "<code>| modelo=haiku</code> e <code>| esforco=high</code> mudam o modelo e o raciocínio só daquele pedido. <code>| motor=codex</code> roda aquele pedido pelo codex em vez do claude.",
-            "Use para testar num pedido só. O modelo efetivo fica gravado no job, então de manhã você sabe com o que cada resultado foi feito."
+            "Use para testar num pedido só. O modelo efetivo fica gravado no job, entêo de manhê você sabe com o que cada resultado foi feito."
           ]
         },
         {
@@ -147,14 +147,14 @@
           "sub": "/furar · /cancelar",
           "texto": [
             "<code>/furar j13</code> põe um job pendente na frente da fila. <code>/cancelar j13</code> interrompe um job pendente ou rodando.",
-            "Cancelar é sobre a fila, não sobre o mundo: o que já foi criado fora (arquivo entregue, vídeo publicado) continua lá."
+            "Cancelar é sobre a fila, nêo sobre o mundo: o que já foi criado fora (arquivo entregue, vídeo publicado) continua lá."
           ]
         },
         {
-          "titulo": "Não reiniciar com o lote rodando",
+          "titulo": "Nêo reiniciar com o lote rodando",
           "sub": "código 143",
           "texto": [
-            "Se um job falhar com <code>código 143</code>, não foi o agente: foi o serviço reiniciado no meio (143 = 128 + 15, o sinal de desligamento). O job volta para a fila se ainda tiver tentativa; senão, falha.",
+            "Se um job falhar com <code>código 143</code>, nêo foi o agente: foi o serviço reiniciado no meio (143 = 128 + 15, o sinal de desligamento). O job volta para a fila se ainda tiver tentativa; senêo, falha.",
             "Um render leva de 10 a 15 min. Dois reinícios seguidos podem gastar as duas tentativas do mesmo job. Antes de reiniciar ou atualizar, confira se a fila está vazia."
           ]
         }
@@ -185,8 +185,8 @@
         "selo": "simulacao",
         "abas": [
           {
-            "rot": "Resposta do /fila (ilustração)",
-            "html": "<pre>texto   · rodando 2 · esperando 1 · erro 24h 0\nrender  · rodando 1 · esperando 2 · erro 24h 0\nio      · rodando 0 · esperando 0 · erro 24h 0</pre><p>Ilustração do tipo de informação; o texto exato do bot pode variar.</p>"
+            "rot": "Resposta do /fila (ilustraçêo)",
+            "html": "<pre>texto   · rodando 2 · esperando 1 · erro 24h 0\nrender  · rodando 1 · esperando 2 · erro 24h 0\nio      · rodando 0 · esperando 0 · erro 24h 0</pre><p>Ilustraçêo do tipo de informaçêo; o texto exato do bot pode variar.</p>"
           },
           {
             "rot": "Skills do catálogo",
@@ -198,23 +198,23 @@
     {
       "tipo": "pratica",
       "titulo": "Prática",
-      "sub": "Use a sua fila no papel. Comece por tarefas sem portão.",
+      "sub": "Use a sua fila no papel. Comece por tarefas sem portêo.",
       "exercicios": [
         {
           "id": "e4",
           "titulo": "E4 · Dez tarefas e vá dormir",
           "min": "1 noite",
           "dias": 1,
-          "texto": "Mande para o bot de 5 a 10 tarefas da sua lista (transcrever, resumir, explicativo…). Confira o /fila uma vez e vá fazer outra coisa. Não reinicie o bot até a fila esvaziar.",
+          "texto": "Mande para o bot de 5 a 10 tarefas da sua lista (transcrever, resumir, explicativo…). Confira o /fila uma vez e vá fazer outra coisa. Nêo reinicie o bot até a fila esvaziar.",
           "pronto": "o /fila mostrou o lote distribuído e, no dia seguinte, cada tarefa tem uma resposta no chat (resultado ou motivo da falha)."
         }
       ],
-      "fonte": "A conferência da manhã é a aula 7. Exercício original: <a href=\"https://github.com/linnoff88-dev/jornada-agentes/blob/main/exercicios/03-filas.md\" target=\"_blank\" rel=\"noopener\">03-filas.md</a> (E4)."
+      "fonte": "A conferência da manhê é a aula 7. Exercício original: <a href=\"https://github.com/linnoff88-dev/jornada-agentes/blob/main/exercicios/03-filas.md\" target=\"_blank\" rel=\"noopener\">03-filas.md</a> (E4)."
     },
     {
       "tipo": "quiz",
       "titulo": "Teste o que aprendeu",
-      "sub": "A explicação aparece depois da sua resposta.",
+      "sub": "A explicaçêo aparece depois da sua resposta.",
       "perguntas": [
         {
           "p": "Você mandou quatro pedidos de vídeo explicativo. Por que só um aparece rodando?",
@@ -225,7 +225,7 @@
             "Falta pagar a assinatura."
           ],
           "certa": 0,
-          "explica": "Os quatro estão guardados; a fila de render tem limite 1. Os outros esperam a vez, e o /fila mostra quantos estão esperando.",
+          "explica": "Os quatro estêo guardados; a fila de render tem limite 1. Os outros esperam a vez, e o /fila mostra quantos estêo esperando.",
           "ref": "diagrama"
         },
         {
@@ -237,7 +237,7 @@
             "Acabou o espaço em disco."
           ],
           "certa": 0,
-          "explica": "143 é o sinal de desligamento. Confira a fila antes de reiniciar. O trabalho não corrompeu; ele só não terminou, e pode ser refeito.",
+          "explica": "143 é o sinal de desligamento. Confira a fila antes de reiniciar. O trabalho nêo corrompeu; ele só nêo terminou, e pode ser refeito.",
           "cert": true,
           "ref": "passos"
         },
@@ -245,7 +245,7 @@
           "p": "Você quer testar um modelo mais barato só num pedido. Como?",
           "opcoes": [
             "Acrescentar <code>| modelo=haiku</code> naquele pedido.",
-            "Trocar o modelo padrão no .env e reiniciar.",
+            "Trocar o modelo padrêo no .env e reiniciar.",
             "Mandar o pedido duas vezes.",
             "Criar uma skill nova."
           ],

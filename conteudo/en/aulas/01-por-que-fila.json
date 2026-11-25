@@ -137,7 +137,7 @@
           "sub": "recovery",
           "texto": [
             "If the process crashes midway, the task isn't lost or left half-done forever. The next time it starts up, whatever was in progress goes back to the queue.",
-            "ARCKHÉccbot does this before accepting new work and writes to the log: <code>boot: recuperação de leases — requeued=N failed=M</code>. <i>Requeued</i> is what went back to the queue; <i>failed</i> is what had already used up all its attempts."
+            "ARCKHÉccbot does this before accepting new work and writes to the log: <code>boot: recuperaçêo de leases — requeued=N failed=M</code>. <i>Requeued</i> is what went back to the queue; <i>failed</i> is what had already used up all its attempts."
           ]
         },
         {
